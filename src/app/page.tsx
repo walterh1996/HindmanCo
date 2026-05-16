@@ -12,16 +12,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-const clients = [
-  { name: "Microsoft", logo: "/images/clients/microsoft.webp" },
-  { name: "AT&T", logo: "/images/clients/att.webp" },
-  { name: "Nasdaq", logo: "/images/clients/nasdaq.webp" },
-  { name: "YouTube", logo: "/images/clients/youtube.webp" },
-  { name: "Edelman", logo: "/images/clients/edelman.webp" },
-  { name: "MullenLowe", logo: "/images/clients/mullenlowe.webp" },
-];
-
 import { LogoMarquee } from "@/components/logo-marquee";
 
 const services = [
