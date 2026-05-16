@@ -36,6 +36,17 @@ yarn-error.log*
 # vercel
 .vercel
 
+# turbo
+.turbo/
+
+# build artifacts
+/dist
+
+# uploads & large media
+public/uploads/
+*.mp4
+*.psd
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
