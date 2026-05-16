@@ -6,8 +6,6 @@ import {
   TrendingUp,
   BarChart3,
   Target,
-  Lightbulb,
-  ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
 
