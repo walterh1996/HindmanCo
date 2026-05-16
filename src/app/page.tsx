@@ -22,6 +22,8 @@ const clients = [
   { name: "MullenLowe", logo: "/images/clients/mullenlowe.webp" },
 ];
 
+import { LogoMarquee } from "@/components/logo-marquee";
+
 const services = [
   {
     icon: PenTool,
