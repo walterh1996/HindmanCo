@@ -7,6 +7,7 @@ import {
   PenTool,
   BarChart3,
   Target,
+  Quote,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,25 +60,16 @@ const services = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Since our sales team has been working with Betsy, the engagement on their LinkedIn posts has increased threefold.",
-    author: "Christine Batycki",
-    company: "Global Marketing Communications, Brooks Instrument",
-  },
-  {
-    quote:
-      "Working with Hindman Company felt less like hiring an agency and more like gaining a strategic advisor. They understand the nuances of executive communication at the highest level.",
-    author: "Chief Marketing Officer",
-    company: "Global Financial Services Firm",
-  },
-  {
-    quote:
-      "The ROI on our LinkedIn campaigns exceeded every other B2B channel. Hindman Company doesn't just run ads — they build systems.",
-    author: "Head of Demand Generation",
-    company: "Enterprise SaaS Company",
-  },
+const sectors = [
+  "Manufacturing",
+  "Advertising",
+  "Gaming",
+  "Entertainment",
+  "Women\u2019s Sports",
+  "Publishing",
+  "Cybersecurity",
+  "Fintech",
+  "SaaS",
 ];
 
 export default function HomePage() {
@@ -150,11 +142,45 @@ export default function HomePage() {
               </FadeIn>
             ))}
           </div>
+          <FadeIn delay={0.3}>
+            <p className="text-center text-xs text-text-secondary/60 mt-8">
+              Plus Dentons, Wieden+Kennedy, Help Scout, Black Kite, and more
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Featured Testimonial — Michael Sugar */}
+      <section className="py-20 md:py-28">
+        <div className="container-narrow">
+          <FadeIn>
+            <div className="max-w-4xl mx-auto text-center">
+              <Quote
+                size={32}
+                className="text-brand/30 mx-auto mb-6"
+                strokeWidth={1.5}
+              />
+              <blockquote className="font-serif italic text-2xl md:text-3xl lg:text-4xl leading-[1.3] text-foreground mb-8">
+                Betsy is, quite simply, the best consultant I&rsquo;ve met when
+                it comes to LinkedIn strategy. She reminded me that the way you
+                tell your story online and the way you connect with the right
+                audience is its own art form.
+              </blockquote>
+              <footer>
+                <p className="text-sm font-medium text-foreground">
+                  Michael Sugar
+                </p>
+                <p className="text-xs text-text-secondary mt-1">
+                  Academy Award-Winning Producer &amp; Founder, Sugar23
+                </p>
+              </footer>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="py-24 md:py-32">
+      <section className="py-24 md:py-32 border-t border-border">
         <div className="container-narrow">
           <div className="max-w-2xl mb-16">
             <FadeIn>
@@ -210,6 +236,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Sectors */}
+      <section className="py-16 bg-accent">
+        <div className="container-narrow">
+          <FadeIn>
+            <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-8 text-center">
+              Industries We Serve
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <div className="flex flex-wrap justify-center gap-3">
+              {sectors.map((sector) => (
+                <span
+                  key={sector}
+                  className="inline-flex items-center px-5 py-2.5 text-sm text-foreground border border-border bg-cream rounded-sm"
+                >
+                  {sector}
+                </span>
+              ))}
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* About Preview — with Betsy photo */}
       <section className="py-24 md:py-32 bg-foreground text-cream">
         <div className="container-narrow">
@@ -223,19 +272,24 @@ export default function HomePage() {
                   Founded by one of LinkedIn&rsquo;s most trusted strategists.
                 </h2>
                 <p className="text-cream/70 leading-relaxed mb-4">
-                  Betsy Hindman has spent over a decade helping the
-                  world&rsquo;s most recognizable brands and executives build
-                  influence on LinkedIn. Her client roster includes Fortune 50
-                  CMOs, Academy Award-winning producers, Olympic athletes, and
-                  the communications teams at companies like Microsoft,
-                  AT&amp;T, and Nasdaq.
+                  Betsy Hindman is a communications strategist who works with
+                  executives, brand leaders, and innovators to not only increase
+                  visibility on LinkedIn, but to establish an influential voice
+                  across their industry. Her clients include Fortune 50
+                  executives, Academy Award-winning producers, legendary
+                  athletes and Olympians, and the communications teams at
+                  Microsoft, YouTube, Dentons, Edelman, and Wieden+Kennedy.
+                </p>
+                <p className="text-cream/70 leading-relaxed mb-4">
+                  Before founding Hindman Company, Betsy spent five years in
+                  enterprise sales at the Walt Disney Company, managing over
+                  $180M in revenue. She served as VP of Paid Media and Content
+                  Marketing at Raven Public Relations and co-founded
+                  ModernDailyKnitting.com.
                 </p>
                 <p className="text-cream/70 leading-relaxed mb-8">
-                  Before founding Hindman Company, Betsy was in enterprise sales
-                  with the Walt Disney Company, where she managed over $180M in
-                  sales, and served as VP of Paid Media and Content Marketing at
-                  Raven Public Relations. She graduated magna cum laude from
-                  Vanderbilt University and makes her home in Nashville, TN.
+                  Featured in Ad Age, CNBC, Digiday, and PRWeek. Vanderbilt
+                  University, magna cum laude. Based in Nashville, TN.
                 </p>
                 <Link
                   href="/about"
@@ -280,23 +334,61 @@ export default function HomePage() {
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, i) => (
-              <FadeIn key={i} delay={0.1 * i}>
-                <blockquote className="border-t border-border pt-8 h-full flex flex-col">
-                  <p className="text-foreground leading-relaxed mb-6 flex-1">
-                    &ldquo;{testimonial.quote}&rdquo;
+            <FadeIn delay={0.1}>
+              <blockquote className="border-t border-border pt-8 h-full flex flex-col">
+                <p className="text-foreground leading-relaxed mb-6 flex-1">
+                  &ldquo;What sets Betsy apart is not just her deep expertise in
+                  the mechanics of LinkedIn, but her passion for her clients. She
+                  cares less about vanity metrics and more about impact — helping
+                  leaders translate their values and vision into posts that
+                  actually resonate.&rdquo;
+                </p>
+                <footer>
+                  <p className="text-sm font-medium text-foreground">
+                    Michael Sugar
                   </p>
-                  <footer>
-                    <p className="text-sm font-medium text-foreground">
-                      {testimonial.author}
-                    </p>
-                    <p className="text-xs text-text-secondary mt-0.5">
-                      {testimonial.company}
-                    </p>
-                  </footer>
-                </blockquote>
-              </FadeIn>
-            ))}
+                  <p className="text-xs text-text-secondary mt-0.5">
+                    Academy Award-Winning Producer, Sugar23
+                  </p>
+                </footer>
+              </blockquote>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <blockquote className="border-t border-border pt-8 h-full flex flex-col">
+                <p className="text-foreground leading-relaxed mb-6 flex-1">
+                  &ldquo;Betsy is the go-to for executives who want to
+                  strengthen their presence and thought leadership on LinkedIn.
+                  She delivered practical, actionable tips that attendees could
+                  put to work right away. I&rsquo;d recommend Betsy without
+                  hesitation.&rdquo;
+                </p>
+                <footer>
+                  <p className="text-sm font-medium text-foreground">
+                    Rachel Huff
+                  </p>
+                  <p className="text-xs text-text-secondary mt-0.5">
+                    Communications &amp; Marketing Leader
+                  </p>
+                </footer>
+              </blockquote>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <blockquote className="border-t border-border pt-8 h-full flex flex-col">
+                <p className="text-foreground leading-relaxed mb-6 flex-1">
+                  &ldquo;Since our sales team has been working with Betsy, the
+                  engagement on their LinkedIn posts has increased
+                  threefold.&rdquo;
+                </p>
+                <footer>
+                  <p className="text-sm font-medium text-foreground">
+                    Christine Batycki
+                  </p>
+                  <p className="text-xs text-text-secondary mt-0.5">
+                    Global Marketing Communications, Brooks Instrument
+                  </p>
+                </footer>
+              </blockquote>
+            </FadeIn>
           </div>
         </div>
       </section>
