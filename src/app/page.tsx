@@ -268,7 +268,7 @@ export default function HomePage() {
 
             <FadeIn delay={0.15} direction="left">
               <div className="relative">
-                <div className="aspect-[3/4] rounded-sm overflow-hidden">
+                <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                   <Image
                     src="/images/betsy-headshot.webp"
                     alt="Betsy Hindman — Founder of Hindman Company"
