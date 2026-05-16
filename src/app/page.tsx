@@ -318,7 +318,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials — Rotating Carousel */}
       <section className="py-24 md:py-32">
         <div className="container-narrow">
           <FadeIn>
@@ -332,63 +332,9 @@ export default function HomePage() {
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <FadeIn delay={0.1}>
-              <blockquote className="border-t border-border pt-8 h-full flex flex-col">
-                <p className="text-foreground leading-relaxed mb-6 flex-1">
-                  &ldquo;What sets Betsy apart is not just her deep expertise in
-                  the mechanics of LinkedIn, but her passion for her clients. She
-                  cares less about vanity metrics and more about impact — helping
-                  leaders translate their values and vision into posts that
-                  actually resonate.&rdquo;
-                </p>
-                <footer>
-                  <p className="text-sm font-medium text-foreground">
-                    Michael Sugar
-                  </p>
-                  <p className="text-xs text-text-secondary mt-0.5">
-                    Academy Award-Winning Producer, Sugar23
-                  </p>
-                </footer>
-              </blockquote>
-            </FadeIn>
-            <FadeIn delay={0.2}>
-              <blockquote className="border-t border-border pt-8 h-full flex flex-col">
-                <p className="text-foreground leading-relaxed mb-6 flex-1">
-                  &ldquo;Betsy is the go-to for executives who want to
-                  strengthen their presence and thought leadership on LinkedIn.
-                  She has a clear line of sight to the latest platform updates
-                  and a strong point of view on how to use them strategically.
-                  I&rsquo;d recommend Betsy without hesitation.&rdquo;
-                </p>
-                <footer>
-                  <p className="text-sm font-medium text-foreground">
-                    Rachel Huff
-                  </p>
-                  <p className="text-xs text-text-secondary mt-0.5">
-                    Communications &amp; Marketing Leader
-                  </p>
-                </footer>
-              </blockquote>
-            </FadeIn>
-            <FadeIn delay={0.3}>
-              <blockquote className="border-t border-border pt-8 h-full flex flex-col">
-                <p className="text-foreground leading-relaxed mb-6 flex-1">
-                  &ldquo;Since our sales team has been working with Betsy, the
-                  engagement on their LinkedIn posts has increased
-                  threefold.&rdquo;
-                </p>
-                <footer>
-                  <p className="text-sm font-medium text-foreground">
-                    Christine Batycki
-                  </p>
-                  <p className="text-xs text-text-secondary mt-0.5">
-                    Global Marketing Communications, Brooks Instrument
-                  </p>
-                </footer>
-              </blockquote>
-            </FadeIn>
-          </div>
+          <FadeIn delay={0.2}>
+            <TestimonialCarousel />
+          </FadeIn>
         </div>
       </section>
 
