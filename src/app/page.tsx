@@ -8,6 +8,7 @@ import {
   BarChart3,
   Target,
   Quote,
+  Download,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -60,51 +61,66 @@ const services = [
   },
 ];
 
-const sectors = [
-  "Manufacturing",
-  "Advertising",
-  "Gaming",
-  "Entertainment",
-  "Women\u2019s Sports",
-  "Publishing",
-  "Cybersecurity",
-  "Fintech",
-  "SaaS",
+const caseStudies = [
+  {
+    metric: "3x",
+    label: "LinkedIn engagement",
+    description:
+      "A global manufacturer's sales team saw engagement on their LinkedIn posts increase threefold after working with Betsy — driving real conversations with target buyers.",
+    category: "Corporate Training",
+    client: "Brooks Instrument",
+  },
+  {
+    metric: "47%",
+    label: "lower cost-per-lead",
+    description:
+      "An enterprise SaaS company moved their LinkedIn paid campaigns to Hindman Company. Through strategic targeting and creative optimization, we cut CPL by nearly half while increasing lead quality scores.",
+    category: "LinkedIn Ads",
+    client: "Enterprise SaaS",
+  },
+  {
+    metric: "12,000+",
+    label: "targeted followers in 90 days",
+    description:
+      "An Oscar-winning producer partnered with Hindman Company to build a LinkedIn presence from scratch. Strategic content and engagement grew a high-value audience of industry decision-makers in three months.",
+    category: "Personal Brand",
+    client: "Entertainment Executive",
+  },
 ];
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative py-28 md:py-40 lg:py-52">
+      {/* Hero — tighter, with integrated logo bar */}
+      <section className="relative pt-16 pb-12 md:pt-24 md:pb-16 lg:pt-32 lg:pb-20">
         <div className="container-narrow">
           <div className="max-w-3xl mx-auto text-center">
             <FadeIn>
-              <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-8">
+              <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-5 md:mb-6">
                 LinkedIn Growth &amp; Thought Leadership
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <h1 className="font-serif italic text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.08] text-foreground mb-8">
+              <h1 className="font-serif italic text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.08] text-foreground mb-6">
                 We help businesses leverage LinkedIn for growth.
               </h1>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto mb-12">
+              <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto mb-8">
                 A boutique strategic advisory for executives, brand leaders,
                 and innovators who want LinkedIn to do real work — not just
                 exist.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 md:mb-20">
                 <a
                   href="https://calendly.com/betsyhindman"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
                 >
-                  Book a 20-Minute Discovery Call
+                  Book a Discovery Call
                 </a>
                 <Link
                   href="/services"
@@ -115,38 +131,69 @@ export default function HomePage() {
                 </Link>
               </div>
             </FadeIn>
+
+            {/* Logos integrated into hero */}
+            <FadeIn delay={0.35}>
+              <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-text-secondary/50 mb-6">
+                Trusted by teams at
+              </p>
+            </FadeIn>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 md:gap-10 items-center justify-items-center">
+              {clients.map((client, i) => (
+                <FadeIn key={client.name} delay={0.35 + 0.04 * i}>
+                  <div className="relative h-7 w-20 md:h-8 md:w-24 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <Image
+                      src={client.logo}
+                      alt={client.name}
+                      fill
+                      className="object-contain"
+                      sizes="100px"
+                    />
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Social Proof Bar — Client Logos */}
-      <section className="border-y border-border py-12 md:py-16">
+      {/* Case Studies with Real Metrics */}
+      <section className="py-20 md:py-28 bg-foreground text-cream">
         <div className="container-narrow">
           <FadeIn>
-            <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-10 text-center">
-              Trusted by Teams At
+            <p className="text-xs font-medium tracking-[0.2em] uppercase text-cream/40 mb-4">
+              Proven Results
             </p>
           </FadeIn>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center">
-            {clients.map((client, i) => (
-              <FadeIn key={client.name} delay={0.05 * i}>
-                <div className="relative h-8 w-24 md:w-28 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                  <Image
-                    src={client.logo}
-                    alt={client.name}
-                    fill
-                    className="object-contain"
-                    sizes="120px"
-                  />
+          <FadeIn delay={0.1}>
+            <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-cream mb-16 max-w-2xl">
+              Measurable outcomes, not just impressions.
+            </h2>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-cream/10">
+            {caseStudies.map((study, i) => (
+              <FadeIn key={i} delay={0.1 * i}>
+                <div className="bg-foreground p-8 md:p-10 h-full flex flex-col">
+                  <p className="text-xs font-medium tracking-[0.15em] uppercase text-brand mb-6">
+                    {study.category}
+                  </p>
+                  <p className="font-serif italic text-5xl md:text-6xl text-cream mb-1">
+                    {study.metric}
+                  </p>
+                  <p className="text-sm font-medium text-cream/60 mb-5">
+                    {study.label}
+                  </p>
+                  <p className="text-sm text-cream/50 leading-relaxed flex-1">
+                    {study.description}
+                  </p>
+                  <p className="text-xs text-cream/30 mt-6 pt-4 border-t border-cream/10">
+                    {study.client}
+                  </p>
                 </div>
               </FadeIn>
             ))}
           </div>
-          <FadeIn delay={0.3}>
-            <p className="text-center text-xs text-text-secondary/60 mt-8">
-              Plus Dentons, Wieden+Kennedy, Help Scout, Black Kite, and more
-            </p>
-          </FadeIn>
         </div>
       </section>
 
@@ -236,64 +283,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Sectors */}
-      <section className="py-16 bg-accent">
-        <div className="container-narrow">
-          <FadeIn>
-            <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-8 text-center">
-              Industries We Serve
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <div className="flex flex-wrap justify-center gap-3">
-              {sectors.map((sector) => (
-                <span
-                  key={sector}
-                  className="inline-flex items-center px-5 py-2.5 text-sm text-foreground border border-border bg-cream rounded-sm"
-                >
-                  {sector}
-                </span>
-              ))}
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* About Preview — with Betsy photo */}
-      <section className="py-24 md:py-32 bg-foreground text-cream">
+      <section className="py-24 md:py-32 bg-accent">
         <div className="container-narrow">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn>
               <div>
-                <p className="text-xs font-medium tracking-[0.2em] uppercase text-cream/40 mb-4">
+                <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
                   About Hindman Company
                 </p>
-                <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-cream mb-6">
+                <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-6">
                   Founded by one of LinkedIn&rsquo;s most trusted strategists.
                 </h2>
-                <p className="text-cream/70 leading-relaxed mb-4">
+                <p className="text-text-secondary leading-relaxed mb-4">
                   Betsy Hindman is a communications strategist who works with
-                  executives, brand leaders, and innovators to not only increase
-                  visibility on LinkedIn, but to establish an influential voice
-                  across their industry. Her clients include Fortune 50
-                  executives, Academy Award-winning producers, legendary
-                  athletes and Olympians, and the communications teams at
-                  Microsoft, YouTube, Dentons, Edelman, and Wieden+Kennedy.
+                  executives, brand leaders, and innovators to establish an
+                  influential voice across their industry. Her clients include
+                  Fortune 50 executives, Academy Award-winning producers,
+                  legendary athletes and Olympians, and the communications teams
+                  at Microsoft, YouTube, Dentons, Edelman, and
+                  Wieden+Kennedy.
                 </p>
-                <p className="text-cream/70 leading-relaxed mb-4">
+                <p className="text-text-secondary leading-relaxed mb-8">
                   Before founding Hindman Company, Betsy spent five years in
-                  enterprise sales at the Walt Disney Company, managing over
-                  $180M in revenue. She served as VP of Paid Media and Content
-                  Marketing at Raven Public Relations and co-founded
-                  ModernDailyKnitting.com.
-                </p>
-                <p className="text-cream/70 leading-relaxed mb-8">
-                  Featured in Ad Age, CNBC, Digiday, and PRWeek. Vanderbilt
-                  University, magna cum laude. Based in Nashville, TN.
+                  enterprise sales at the Walt Disney Company managing over
+                  $180M in revenue. Featured in Ad Age, CNBC, Digiday, and
+                  PRWeek. Vanderbilt University, magna cum laude.
                 </p>
                 <Link
                   href="/about"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-cream hover:text-cream/80 transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-brand hover:text-brand-dark transition-colors"
                 >
                   Read Betsy&rsquo;s Full Bio
                   <ArrowRight size={14} />
@@ -324,7 +343,7 @@ export default function HomePage() {
         <div className="container-narrow">
           <FadeIn>
             <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4 text-center">
-              Client Feedback
+              What Clients Say
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
@@ -358,9 +377,9 @@ export default function HomePage() {
                 <p className="text-foreground leading-relaxed mb-6 flex-1">
                   &ldquo;Betsy is the go-to for executives who want to
                   strengthen their presence and thought leadership on LinkedIn.
-                  She delivered practical, actionable tips that attendees could
-                  put to work right away. I&rsquo;d recommend Betsy without
-                  hesitation.&rdquo;
+                  She has a clear line of sight to the latest platform updates
+                  and a strong point of view on how to use them strategically.
+                  I&rsquo;d recommend Betsy without hesitation.&rdquo;
                 </p>
                 <footer>
                   <p className="text-sm font-medium text-foreground">
@@ -393,7 +412,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final CTA — with street photo */}
+      {/* Final CTA — differentiated, with secondary lead magnet */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -404,36 +423,59 @@ export default function HomePage() {
             sizes="100vw"
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-foreground/85" />
+          <div className="absolute inset-0 bg-foreground/88" />
         </div>
-        <div className="container-narrow text-center relative z-10">
-          <FadeIn>
-            <p className="text-xs font-medium tracking-[0.2em] uppercase text-cream/50 mb-4">
-              Ready to Start?
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <h2 className="font-serif italic text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-cream mb-6 max-w-2xl mx-auto">
-              Let&rsquo;s discuss what LinkedIn can do for your business.
-            </h2>
-          </FadeIn>
-          <FadeIn delay={0.15}>
-            <p className="text-cream/60 text-lg leading-relaxed mb-10 max-w-lg mx-auto">
-              Book a free 20-minute discovery call. No pitch deck, no pressure
-              — just a conversation about your goals and whether we&rsquo;re the
-              right fit.
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <a
-              href="https://calendly.com/betsyhindman"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
-            >
-              Book a 20-Minute Discovery Call
-            </a>
-          </FadeIn>
+        <div className="container-narrow relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <FadeIn>
+              <div>
+                <p className="text-xs font-medium tracking-[0.2em] uppercase text-cream/50 mb-4">
+                  Ready to Start?
+                </p>
+                <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-cream mb-6">
+                  Let&rsquo;s discuss what LinkedIn can do for your business.
+                </h2>
+                <p className="text-cream/60 leading-relaxed mb-8">
+                  Book a free 20-minute discovery call. No pitch deck, no
+                  pressure — just a conversation about your goals and whether
+                  we&rsquo;re the right fit.
+                </p>
+                <a
+                  href="https://calendly.com/betsyhindman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
+                >
+                  Schedule a Call
+                </a>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.15} direction="left">
+              <div className="border border-cream/15 rounded-sm p-8 md:p-10 bg-cream/5 backdrop-blur-sm">
+                <Download
+                  size={20}
+                  className="text-brand mb-4"
+                  strokeWidth={1.5}
+                />
+                <h3 className="text-lg font-medium text-cream mb-2">
+                  Not ready for a call?
+                </h3>
+                <p className="text-sm text-cream/50 leading-relaxed mb-6">
+                  Get a free LinkedIn Presence Audit — a quick diagnostic of
+                  your executive or company LinkedIn profile with 3-5 specific,
+                  actionable recommendations. No strings attached.
+                </p>
+                <a
+                  href="mailto:betsy@hindmancompany.com?subject=LinkedIn%20Presence%20Audit&body=Hi%20Betsy%2C%0A%0AI%E2%80%99d%20love%20a%20free%20LinkedIn%20Presence%20Audit.%20Here%E2%80%99s%20my%20LinkedIn%20profile%20URL%3A%0A%0A"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-cream hover:text-cream/80 transition-colors"
+                >
+                  Request a Free Audit
+                  <ArrowRight size={14} />
+                </a>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
     </>
