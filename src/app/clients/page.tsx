@@ -35,6 +35,13 @@ const allClients = [
   { name: "Zippay", logo: "/images/clients/zippay.webp" },
 ];
 
+const additionalClients = [
+  "Dentons",
+  "Wieden+Kennedy",
+  "Sugar23",
+  "The Walt Disney Company",
+];
+
 const clientTypes = [
   {
     title: "Enterprise Brands",
