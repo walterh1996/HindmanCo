@@ -49,6 +49,17 @@ export default function ContactPage() {
             </div>
 
             <div className="lg:pt-8">
+              <FadeIn delay={0.15} direction="left">
+                <div className="relative aspect-[4/5] rounded-sm overflow-hidden mb-10">
+                  <Image
+                    src="/images/betsy-headshot.webp"
+                    alt="Betsy Hindman"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                  />
+                </div>
+              </FadeIn>
               <FadeIn delay={0.2} direction="left">
                 <div className="space-y-8">
                   <div>
