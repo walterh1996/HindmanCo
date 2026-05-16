@@ -45,7 +45,6 @@ yarn-error.log*
 
 # uploads & large media
 public/uploads/
-*.mp4
 *.psd
 
 # typescript
