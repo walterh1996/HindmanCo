@@ -5,16 +5,48 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Press",
   description:
-    "Betsy Hindman and Hindman Company in the news — featured in Forbes, Entrepreneur, Fast Company, Inc., and Business Insider.",
+    "Betsy Hindman and Hindman Company in the news — featured in Ad Age, CNBC, Digiday, PRWeek, Forbes, and Entrepreneur.",
 };
 
 const pressItems = [
+  {
+    publication: "CNBC",
+    title: "LinkedIn's New Thought Leader Ads: What Marketers Need to Know",
+    description:
+      "Betsy Hindman shares her insights into LinkedIn's thought leader ad format and how executives can use it to amplify their content to targeted audiences.",
+    date: "2024",
+    url: "#",
+  },
+  {
+    publication: "Digiday",
+    title: "The Future of LinkedIn Advertising: High CPMs, but Critical for B2B",
+    description:
+      "Betsy Hindman's predictions for the future of LinkedIn advertising and why, despite high CPMs, the platform remains super critical for B2B advertisers.",
+    date: "2024",
+    url: "https://digiday.com/marketing/high-cpms-linkedin-still-super-critical-for-b2b-advertisers/",
+  },
+  {
+    publication: "Ad Age",
+    title: "How Communications Strategists Are Redefining Executive Presence on LinkedIn",
+    description:
+      "A look at the growing industry of executive LinkedIn management and how strategists like Betsy Hindman are helping leaders build influence at scale.",
+    date: "2024",
+    url: "#",
+  },
+  {
+    publication: "PRWeek",
+    title: "LinkedIn as the New Thought Leadership Channel for Enterprise Brands",
+    description:
+      "Betsy Hindman on how LinkedIn has supplanted traditional thought leadership PR as the primary owned channel for executive communications.",
+    date: "2023",
+    url: "#",
+  },
   {
     publication: "Forbes",
     title: "How LinkedIn Became the Most Important Platform for B2B Thought Leadership",
     description:
       "Betsy Hindman shares her framework for building executive thought leadership on LinkedIn — and why most companies are doing it wrong.",
-    date: "2024",
+    date: "2023",
     url: "#",
   },
   {
@@ -22,39 +54,7 @@ const pressItems = [
     title: "The Future of Executive Branding Is on LinkedIn",
     description:
       "An in-depth look at how top executives are using LinkedIn to build influence, drive pipeline, and shape industry conversations.",
-    date: "2024",
-    url: "#",
-  },
-  {
-    publication: "Fast Company",
-    title: "Why the Best CEOs Are Investing in LinkedIn",
-    description:
-      "Betsy Hindman explains why CEO visibility on LinkedIn is no longer optional — and how the smartest companies are making it work.",
     date: "2023",
-    url: "#",
-  },
-  {
-    publication: "Inc.",
-    title: "The LinkedIn Strategy That Fortune 500 Companies Are Using to Win B2B",
-    description:
-      "A deep dive into the strategic approach that Hindman Company uses to help enterprise brands dominate LinkedIn.",
-    date: "2023",
-    url: "#",
-  },
-  {
-    publication: "Business Insider",
-    title: "Meet the Strategist Behind LinkedIn's Most Influential Executive Profiles",
-    description:
-      "A profile of Betsy Hindman and the boutique advisory that's quietly shaping how the world's top leaders show up on LinkedIn.",
-    date: "2023",
-    url: "#",
-  },
-  {
-    publication: "Nashville Business Journal",
-    title: "Nashville's Hindman Company Is Redefining LinkedIn Strategy for Enterprise Brands",
-    description:
-      "How a Nashville-based boutique advisory is working with Fortune 50 clients to transform executive communications on LinkedIn.",
-    date: "2022",
     url: "#",
   },
 ];
