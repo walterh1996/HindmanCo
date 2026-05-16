@@ -19,10 +19,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-brand rounded-[4px] flex items-center justify-center">
-                <span className="text-white font-serif italic text-lg leading-none">
-                  Hco
-                </span>
+              <div className="relative w-10 h-10 rounded-[4px] overflow-hidden">
+                <Image
+                  src="/images/hco-logo.webp"
+                  alt="Hindman Company"
+                  fill
+                  className="object-cover"
+                  sizes="40px"
+                />
               </div>
               <span className="text-sm font-medium tracking-wide uppercase text-cream/80">
                 Hindman Company
