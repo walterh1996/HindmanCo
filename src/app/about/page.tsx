@@ -1,4 +1,5 @@
 import { FadeIn } from "@/components/fade-in";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,22 +9,10 @@ export const metadata: Metadata = {
 };
 
 const credentials = [
-  {
-    label: "Years in LinkedIn Strategy",
-    value: "10+",
-  },
-  {
-    label: "Fortune 500 Clients Served",
-    value: "30+",
-  },
-  {
-    label: "Executive Profiles Managed",
-    value: "200+",
-  },
-  {
-    label: "Based In",
-    value: "Nashville, TN",
-  },
+  { label: "Years in LinkedIn Strategy", value: "10+" },
+  { label: "Fortune 500 Clients Served", value: "30+" },
+  { label: "Executive Profiles Managed", value: "200+" },
+  { label: "Based In", value: "Nashville, TN" },
 ];
 
 const pressLogos = [
@@ -31,7 +20,8 @@ const pressLogos = [
   "Entrepreneur",
   "Fast Company",
   "Inc.",
-  "Business Insider",
+  "CNBC",
+  "Digiday",
 ];
 
 export default function AboutPage() {
@@ -40,7 +30,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="py-24 md:py-32">
         <div className="container-narrow">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
             <div className="lg:col-span-3">
               <FadeIn>
                 <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-6">
@@ -60,31 +50,46 @@ export default function AboutPage() {
               <FadeIn delay={0.2}>
                 <div className="space-y-5 text-text-secondary leading-relaxed text-lg">
                   <p>
-                    Betsy Hindman is a LinkedIn strategist, B2B marketing
-                    advisor, and the founder of Hindman Company — a boutique
-                    advisory that helps executives, enterprise brands, and
-                    high-profile personal brands leverage LinkedIn for real
-                    business growth.
+                    Betsy Hindman is a communications strategist who works with
+                    executives, brand leaders, and innovators to not only
+                    increase visibility on the LinkedIn platform, but to
+                    establish an influential voice across their industry.
                   </p>
                   <p>
-                    Over the past decade, Betsy has worked with Fortune 50 CMOs,
-                    Academy Award-winning producers, Olympic athletes, and the
-                    communications teams at companies like Microsoft, AT&amp;T,
-                    Nasdaq, YouTube, Edelman, and MullenLowe. Her approach is
-                    strategic, not tactical — she helps clients build a distinct
-                    point of view, not just a posting schedule.
+                    She has worked with leaders across all sectors, including
+                    advertising, gaming, entertainment, women&rsquo;s sports,
+                    and publishing. Her wide-ranging clients include Fortune 50
+                    executives, Academy Award-winning entertainment producers,
+                    legendary athletes and Olympians, tier 1 advertising
+                    agencies and PR firms, cybersecurity, fintech and SaaS
+                    teams.
                   </p>
                   <p>
-                    Before founding Hindman Company, Betsy built and led
-                    marketing teams at high-growth startups and worked at the
-                    intersection of media, brand, and technology. She is a
-                    recognized speaker on LinkedIn strategy, executive
-                    communications, and the future of B2B influence.
+                    Over the past 5 years, LinkedIn has gone from a nice-to-have
+                    to a critical owned communication channel for brands and
+                    brand leaders — even supplanting traditional thought
+                    leadership PR. It has also become an engine for
+                    partnerships, brand growth and customer acquisition.
                   </p>
                   <p>
-                    Betsy has been featured in Forbes, Entrepreneur, Fast
-                    Company, Inc., and Business Insider. She lives in Nashville,
-                    Tennessee.
+                    Betsy frequently shares her industry knowledge as a speaker,
+                    panelist, and source for news articles, such as her insights
+                    into LinkedIn&rsquo;s new thought leader ads for CNBC, and
+                    her predictions for the future of LinkedIn advertising,
+                    which appeared in Digiday.
+                  </p>
+                  <p>
+                    Prior to founding Hindman Company, Betsy was in enterprise
+                    sales with the Walt Disney Company, where she managed over
+                    $180M in sales, and served as the VP of Paid Media and
+                    Content Marketing at Raven Public Relations. An ardent
+                    entrepreneur, Betsy is also a co-founder of
+                    ModernDailyKnitting.com.
+                  </p>
+                  <p>
+                    Betsy graduated magna cum laude from Vanderbilt University
+                    and makes her home in Nashville, TN with frequent trips to
+                    NYC and LA.
                   </p>
                 </div>
               </FadeIn>
@@ -92,7 +97,16 @@ export default function AboutPage() {
 
             <div className="lg:col-span-2">
               <FadeIn delay={0.2} direction="left">
-                <div className="aspect-[3/4] bg-accent rounded-sm mb-8" />
+                <div className="relative aspect-[3/4] rounded-sm overflow-hidden sticky top-28">
+                  <Image
+                    src="/images/betsy-about.webp"
+                    alt="Betsy Hindman — Founder & CEO of Hindman Company"
+                    fill
+                    className="object-cover"
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                  />
+                </div>
               </FadeIn>
             </div>
           </div>
@@ -139,9 +153,20 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Approach */}
-      <section className="py-24 md:py-32 bg-foreground text-cream">
-        <div className="container-narrow">
+      {/* Approach — with street photography */}
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero-street-2.webp"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-foreground/90" />
+        </div>
+        <div className="container-narrow relative z-10">
           <div className="max-w-3xl mx-auto">
             <FadeIn>
               <p className="text-xs font-medium tracking-[0.2em] uppercase text-cream/40 mb-4">
@@ -156,17 +181,16 @@ export default function AboutPage() {
             <FadeIn delay={0.15}>
               <div className="space-y-5 text-cream/70 leading-relaxed">
                 <p>
-                  Most LinkedIn &ldquo;agencies&rdquo; start with content. We
-                  start with strategy. Before a single post is written, we
-                  invest in understanding the leader, the brand, the audience,
-                  and the business objective.
+                  Platform tips and tricks will only take you so far. Betsy
+                  learns her clients&rsquo; priorities, industry, voice, and
+                  area of expertise and then delivers a highly customized
+                  strategy and support that fully engages the LinkedIn platform
+                  for brands and individuals.
                 </p>
                 <p>
-                  Every engagement begins with a deep-dive discovery process —
-                  competitive analysis, audience mapping, voice development, and
-                  a clear articulation of the outcomes that matter. Only then do
-                  we build the system: content pillars, posting cadences,
-                  engagement strategy, and measurement frameworks.
+                  The approach taps into other thought leadership strategies
+                  such as events, awards, podcasts and earned media — building a
+                  comprehensive system that goes far beyond a posting schedule.
                 </p>
                 <p>
                   The result is a LinkedIn presence that doesn&rsquo;t just look
