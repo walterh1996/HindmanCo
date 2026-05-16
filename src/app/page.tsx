@@ -178,35 +178,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Testimonial — Michael Sugar */}
-      <section className="py-20 md:py-28">
-        <div className="container-narrow">
-          <FadeIn>
-            <div className="max-w-4xl mx-auto text-center">
-              <Quote
-                size={32}
-                className="text-brand/30 mx-auto mb-6"
-                strokeWidth={1.5}
-              />
-              <blockquote className="font-serif italic text-2xl md:text-3xl lg:text-4xl leading-[1.3] text-foreground mb-8">
-                Betsy is, quite simply, the best consultant I&rsquo;ve met when
-                it comes to LinkedIn strategy. She reminded me that the way you
-                tell your story online and the way you connect with the right
-                audience is its own art form.
-              </blockquote>
-              <footer>
-                <p className="text-sm font-medium text-foreground">
-                  Michael Sugar
-                </p>
-                <p className="text-xs text-text-secondary mt-1">
-                  Academy Award-Winning Producer &amp; Founder, Sugar23
-                </p>
-              </footer>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* Services Overview */}
       <section className="py-24 md:py-32 border-t border-border">
         <div className="container-narrow">
