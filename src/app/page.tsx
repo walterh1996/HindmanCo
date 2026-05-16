@@ -7,7 +7,6 @@ import {
   PenTool,
   BarChart3,
   Target,
-  Quote,
   Download,
 } from "lucide-react";
 import Image from "next/image";
