@@ -1,7 +1,6 @@
 import { FadeIn } from "@/components/fade-in";
-import { Quote, ArrowRight } from "lucide-react";
+import { Quote } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
