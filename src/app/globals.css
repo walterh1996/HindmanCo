@@ -52,3 +52,11 @@ body {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
