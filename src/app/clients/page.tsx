@@ -137,10 +137,20 @@ export default function ClientsPage() {
               </FadeIn>
             ))}
           </div>
+          <FadeIn delay={0.5}>
+            <p className="text-center text-sm text-text-secondary/70 mt-10">
+              Plus{" "}
+              {additionalClients.map((name, i) => (
+                <span key={name}>
+                  <span className="font-medium text-text-secondary">{name}</span>
+                  {i < additionalClients.length - 1 ? ", " : ""}
+                </span>
+              ))}
+              , and more.
+            </p>
+          </FadeIn>
         </div>
       </section>
-
-      {/* Client Types */}
       <section className="py-24 md:py-32">
         <div className="container-narrow">
           <FadeIn>
