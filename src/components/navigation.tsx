@@ -21,10 +21,15 @@ export function Navigation() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-border">
       <nav className="container-narrow flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-brand rounded-[4px] flex items-center justify-center">
-            <span className="text-white font-serif italic text-lg leading-none">
-              Hco
-            </span>
+          <div className="relative w-10 h-10 rounded-[4px] overflow-hidden">
+            <Image
+              src="/images/hco-logo.webp"
+              alt="Hindman Company"
+              fill
+              className="object-cover"
+              sizes="40px"
+              priority
+            />
           </div>
           <span className="hidden sm:block text-sm font-medium tracking-wide uppercase text-foreground">
             Hindman Company
