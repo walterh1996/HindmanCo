@@ -1,4 +1,5 @@
 import { FadeIn } from "@/components/fade-in";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,13 +8,31 @@ export const metadata: Metadata = {
     "Hindman Company has worked with Fortune 50 executives, global brands, and high-profile personal brands including Microsoft, AT&T, Nasdaq, YouTube, Edelman, and more.",
 };
 
-const enterpriseClients = [
-  { name: "Microsoft", category: "Technology" },
-  { name: "AT&T", category: "Telecommunications" },
-  { name: "Nasdaq", category: "Financial Services" },
-  { name: "YouTube", category: "Technology" },
-  { name: "Edelman", category: "Public Relations" },
-  { name: "MullenLowe", category: "Advertising" },
+const allClients = [
+  { name: "Microsoft", logo: "/images/clients/microsoft.webp" },
+  { name: "AT&T", logo: "/images/clients/att.webp" },
+  { name: "Nasdaq", logo: "/images/clients/nasdaq.webp" },
+  { name: "YouTube", logo: "/images/clients/youtube.webp" },
+  { name: "Edelman", logo: "/images/clients/edelman.webp" },
+  { name: "MullenLowe", logo: "/images/clients/mullenlowe.webp" },
+  { name: "Brooks Instrument", logo: "/images/clients/brooks.webp" },
+  { name: "Help Scout", logo: "/images/clients/helpscout.webp" },
+  { name: "Black Kite", logo: "/images/clients/black-kite.webp" },
+  { name: "Match", logo: "/images/clients/match.webp" },
+  { name: "Groups360", logo: "/images/clients/groups360.webp" },
+  { name: "August", logo: "/images/clients/august.webp" },
+  { name: "Mythology", logo: "/images/clients/mythology.webp" },
+  { name: "Yard", logo: "/images/clients/yard.webp" },
+  { name: "NBZ", logo: "/images/clients/nbz.webp" },
+  { name: "Narrative Science", logo: "/images/clients/narrative-science.webp" },
+  { name: "Evalla Advisors", logo: "/images/clients/evalla.webp" },
+  { name: "ESL", logo: "/images/clients/esl.webp" },
+  { name: "ZS", logo: "/images/clients/zs.webp" },
+  { name: "Rosie Red", logo: "/images/clients/rosie-red.webp" },
+  { name: "Sprout House", logo: "/images/clients/sprouthouse.webp" },
+  { name: "Bill Frist", logo: "/images/clients/bill-frist.webp" },
+  { name: "HHC", logo: "/images/clients/hhc.webp" },
+  { name: "Zippay", logo: "/images/clients/zippay.webp" },
 ];
 
 const clientTypes = [
@@ -54,10 +73,10 @@ const caseStudies = [
     category: "LinkedIn Ads",
   },
   {
-    headline: "10,000+ new followers in 90 days",
+    headline: "3x engagement on LinkedIn posts",
     description:
-      "A high-profile founder partnered with Hindman Company to build their LinkedIn presence from scratch. Through strategic content and engagement, we grew their audience to over 10,000 targeted followers in three months.",
-    category: "Personal Brand",
+      "After working with Betsy, a global manufacturer's sales team saw engagement on their LinkedIn posts increase threefold — driving real conversations with target buyers.",
+    category: "Corporate Training",
   },
 ];
 
@@ -90,24 +109,23 @@ export default function ClientsPage() {
         </div>
       </section>
 
-      {/* Client Logos */}
-      <section className="border-y border-border py-16">
+      {/* Full Client Logo Wall */}
+      <section className="border-y border-border py-16 md:py-20">
         <div className="container-narrow">
-          <FadeIn>
-            <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-10 text-center">
-              Select Enterprise Clients
-            </p>
-          </FadeIn>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {enterpriseClients.map((client, i) => (
-              <FadeIn key={client.name} delay={0.05 * i}>
-                <div className="flex flex-col items-center text-center py-6">
-                  <span className="text-2xl font-serif italic text-foreground/80 mb-2">
-                    {client.name}
-                  </span>
-                  <span className="text-[11px] font-medium tracking-[0.1em] uppercase text-text-secondary">
-                    {client.category}
-                  </span>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 md:gap-10 items-center justify-items-center">
+            {allClients.map((client, i) => (
+              <FadeIn key={client.name} delay={0.03 * i}>
+                <div
+                  className="relative h-10 w-28 md:h-12 md:w-32 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  title={client.name}
+                >
+                  <Image
+                    src={client.logo}
+                    alt={client.name}
+                    fill
+                    className="object-contain"
+                    sizes="140px"
+                  />
                 </div>
               </FadeIn>
             ))}
