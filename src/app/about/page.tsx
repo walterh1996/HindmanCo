@@ -1,5 +1,4 @@
 import { FadeIn } from "@/components/fade-in";
-import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
