@@ -97,7 +97,7 @@ export default function AboutPage() {
 
             <div className="lg:col-span-2">
               <FadeIn delay={0.2} direction="left">
-                <div className="relative aspect-[3/4] rounded-sm overflow-hidden sticky top-28">
+                <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                   <Image
                     src="/images/betsy-about.webp"
                     alt="Betsy Hindman — Founder & CEO of Hindman Company"
