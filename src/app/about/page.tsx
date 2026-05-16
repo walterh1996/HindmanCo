@@ -1,5 +1,7 @@
 import { FadeIn } from "@/components/fade-in";
+import { Quote, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,19 +11,57 @@ export const metadata: Metadata = {
 };
 
 const credentials = [
-  { label: "Years in LinkedIn Strategy", value: "10+" },
-  { label: "Fortune 500 Clients Served", value: "30+" },
+  { label: "Years in Business", value: "7+" },
+  { label: "Years of Experience", value: "24+" },
   { label: "Executive Profiles Managed", value: "200+" },
   { label: "Based In", value: "Nashville, TN" },
 ];
 
 const pressLogos = [
-  "Forbes",
-  "Entrepreneur",
-  "Fast Company",
-  "Inc.",
+  "Ad Age",
   "CNBC",
   "Digiday",
+  "PRWeek",
+  "Forbes",
+  "Entrepreneur",
+];
+
+const career = [
+  {
+    role: "Founder",
+    company: "Hindman Company",
+    period: "2018 — Present",
+    description:
+      "LinkedIn strategy, executive thought leadership, paid campaigns, and corporate training for Fortune 50 executives, global brands, and high-profile personal brands.",
+  },
+  {
+    role: "VP, Content Marketing & Paid Media",
+    company: "Raven Public Relations",
+    period: "2017 — 2018",
+    description:
+      "Led content marketing and paid media strategy for a PR firm serving ad agencies, brands, media companies, and creative technology businesses.",
+  },
+  {
+    role: "Partner",
+    company: "Modern Daily Knitting",
+    period: "2015 — 2019",
+    description:
+      "Co-founded and grew the world\u2019s leading knitting eCommerce platform, combining editorial content with direct-to-consumer commerce.",
+  },
+  {
+    role: "Senior Strategist",
+    company: "Parthenon Publishing",
+    period: "2013 — 2015",
+    description:
+      "Marketing strategy for a Nashville-based book and periodical publishing company.",
+  },
+  {
+    role: "National Account Manager",
+    company: "The Walt Disney Company",
+    period: "2003 — 2008",
+    description:
+      "Managed over $180M in national account sales across Disney\u2019s entertainment distribution division. Five years in enterprise sales at one of the world\u2019s most recognized brands.",
+  },
 ];
 
 export default function AboutPage() {
@@ -57,39 +97,39 @@ export default function AboutPage() {
                   </p>
                   <p>
                     She has worked with leaders across all sectors, including
-                    advertising, gaming, entertainment, women&rsquo;s sports,
-                    and publishing. Her wide-ranging clients include Fortune 50
-                    executives, Academy Award-winning entertainment producers,
-                    legendary athletes and Olympians, tier 1 advertising
-                    agencies and PR firms, cybersecurity, fintech and SaaS
-                    teams.
+                    manufacturing, advertising, gaming, entertainment,
+                    women&rsquo;s sports, and publishing. Her clients include
+                    Fortune 50 executives, Academy Award-winning entertainment
+                    producers, legendary athletes and Olympians, tier 1
+                    advertising agencies and PR firms, cybersecurity, fintech,
+                    and SaaS teams. She&rsquo;s also worked with groups of
+                    formerly incarcerated men and veterans making the transition
+                    to the business world.
                   </p>
                   <p>
                     Over the past 5 years, LinkedIn has gone from a nice-to-have
                     to a critical owned communication channel for brands and
                     brand leaders — even supplanting traditional thought
                     leadership PR. It has also become an engine for
-                    partnerships, brand growth and customer acquisition.
+                    partnerships, brand growth, and customer acquisition.
                   </p>
                   <p>
                     Betsy frequently shares her industry knowledge as a speaker,
                     panelist, and source for news articles, such as her insights
-                    into LinkedIn&rsquo;s new thought leader ads for CNBC, and
-                    her predictions for the future of LinkedIn advertising,
-                    which appeared in Digiday.
+                    into LinkedIn&rsquo;s thought leader ads for CNBC, and her
+                    predictions for the future of LinkedIn advertising in
+                    Digiday. She has been featured in Ad Age, CNBC, Digiday,
+                    PRWeek, Forbes, and Entrepreneur.
                   </p>
                   <p>
-                    Prior to founding Hindman Company, Betsy was in enterprise
-                    sales with the Walt Disney Company, where she managed over
-                    $180M in sales, and served as the VP of Paid Media and
-                    Content Marketing at Raven Public Relations. An ardent
-                    entrepreneur, Betsy is also a co-founder of
-                    ModernDailyKnitting.com.
+                    Betsy is a member of the Sunday Dinner Community — a
+                    private, curated group of 400 senior leaders in marketing
+                    and advertising, helmed by Lindsey Slaby in New York.
                   </p>
                   <p>
-                    Betsy graduated magna cum laude from Vanderbilt University
-                    and makes her home in Nashville, TN with frequent trips to
-                    NYC and LA.
+                    She graduated magna cum laude from Vanderbilt University and
+                    makes her home in Nashville, TN with frequent trips to NYC
+                    and LA.
                   </p>
                 </div>
               </FadeIn>
@@ -133,8 +173,37 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Michael Sugar Quote */}
+      <section className="py-20 md:py-28">
+        <div className="container-narrow">
+          <FadeIn>
+            <div className="max-w-3xl mx-auto text-center">
+              <Quote
+                size={28}
+                className="text-brand/30 mx-auto mb-6"
+                strokeWidth={1.5}
+              />
+              <blockquote className="font-serif italic text-xl md:text-2xl lg:text-3xl leading-[1.35] text-foreground mb-8">
+                I came to her as an Oscar winning producer who thought I knew
+                something about storytelling. Betsy reminded me that the way you
+                tell your story online and the way you connect with the right
+                audience is its own art form.
+              </blockquote>
+              <footer>
+                <p className="text-sm font-medium text-foreground">
+                  Michael Sugar
+                </p>
+                <p className="text-xs text-text-secondary mt-1">
+                  Academy Award-Winning Producer &amp; Founder, Sugar23
+                </p>
+              </footer>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Featured In */}
-      <section className="py-20">
+      <section className="py-16 border-y border-border">
         <div className="container-narrow text-center">
           <FadeIn>
             <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-8">
@@ -149,6 +218,49 @@ export default function AboutPage() {
                 </span>
               </FadeIn>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Career Timeline */}
+      <section className="py-24 md:py-32">
+        <div className="container-narrow">
+          <div className="max-w-3xl">
+            <FadeIn>
+              <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
+                Career
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-12">
+                24+ years across sales, marketing, media, and strategy.
+              </h2>
+            </FadeIn>
+
+            <div className="space-y-0 divide-y divide-border">
+              {career.map((item, i) => (
+                <FadeIn key={item.company} delay={0.05 * i}>
+                  <div className="py-8 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2 md:gap-8">
+                    <div>
+                      <p className="text-xs font-medium tracking-[0.1em] uppercase text-text-secondary">
+                        {item.period}
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-base font-medium text-foreground">
+                        {item.role}
+                      </h3>
+                      <p className="text-sm font-medium text-brand mb-2">
+                        {item.company}
+                      </p>
+                      <p className="text-sm text-text-secondary leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -184,13 +296,9 @@ export default function AboutPage() {
                   Platform tips and tricks will only take you so far. Betsy
                   learns her clients&rsquo; priorities, industry, voice, and
                   area of expertise and then delivers a highly customized
-                  strategy and support that fully engages the LinkedIn platform
-                  for brands and individuals.
-                </p>
-                <p>
-                  The approach taps into other thought leadership strategies
-                  such as events, awards, podcasts and earned media — building a
-                  comprehensive system that goes far beyond a posting schedule.
+                  strategy that fully engages LinkedIn and taps into other
+                  thought leadership channels — events, awards, podcasts, and
+                  earned media.
                 </p>
                 <p>
                   The result is a LinkedIn presence that doesn&rsquo;t just look
@@ -204,8 +312,33 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Rachel Huff Quote */}
+      <section className="py-20 md:py-28 bg-accent">
+        <div className="container-narrow">
+          <FadeIn>
+            <div className="max-w-3xl mx-auto text-center">
+              <blockquote className="font-serif italic text-xl md:text-2xl leading-[1.35] text-foreground mb-8">
+                &ldquo;Betsy is the go-to for executives who want to strengthen
+                their presence and thought leadership on LinkedIn. She has a
+                clear line of sight to the latest platform updates and a strong
+                point of view on how to use them strategically for executive
+                visibility.&rdquo;
+              </blockquote>
+              <footer>
+                <p className="text-sm font-medium text-foreground">
+                  Rachel Huff
+                </p>
+                <p className="text-xs text-text-secondary mt-1">
+                  Communications &amp; Marketing Leader
+                </p>
+              </footer>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="py-24 md:py-32 bg-accent">
+      <section className="py-24 md:py-32">
         <div className="container-narrow text-center">
           <FadeIn>
             <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-6 max-w-2xl mx-auto">
