@@ -134,28 +134,16 @@ export default function HomePage() {
               </div>
             </FadeIn>
 
-            {/* Logos integrated into hero */}
+            {/* Logo marquee — full client list, scrolling */}
             <FadeIn delay={0.35}>
               <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-text-secondary/50 mb-6">
                 Trusted by teams at
               </p>
             </FadeIn>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 md:gap-10 items-center justify-items-center">
-              {clients.map((client, i) => (
-                <FadeIn key={client.name} delay={0.35 + 0.04 * i}>
-                  <div className="relative h-7 w-20 md:h-8 md:w-24 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                    <Image
-                      src={client.logo}
-                      alt={client.name}
-                      fill
-                      className="object-contain"
-                      sizes="100px"
-                    />
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
           </div>
+          <FadeIn delay={0.4}>
+            <LogoMarquee />
+          </FadeIn>
         </div>
       </section>
 
