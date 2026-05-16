@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight } from "lucide-react";
+import { LinkedInIcon } from "@/components/icons";
 
 const footerLinks = [
   { href: "/services", label: "Services" },
