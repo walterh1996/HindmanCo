@@ -234,7 +234,7 @@ export function TestimonialCarousel() {
         <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-cream to-transparent z-10 pointer-events-none lg:hidden" />
         <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none lg:hidden" />
 
-        <div className="flex items-center justify-start lg:justify-center gap-3 md:gap-4 overflow-x-auto pb-2 scrollbar-hide px-2">
+        <div className="flex items-center justify-start lg:justify-center gap-3 md:gap-4 overflow-x-auto py-4 scrollbar-hide px-2">
           {testimonials.map((person, i) => (
             <button
               key={person.author}
