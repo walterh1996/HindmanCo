@@ -319,16 +319,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials — Rotating Carousel */}
+      {/* Testimonials — Interactive Carousel */}
       <section className="py-24 md:py-32">
         <div className="container-narrow">
           <FadeIn>
-            <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4 text-center">
+            <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
               What Clients Say
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-16 text-center max-w-2xl mx-auto">
+            <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-14 md:mb-16 max-w-xl">
               Trusted by leaders who set the standard.
             </h2>
           </FadeIn>
