@@ -1,6 +1,7 @@
 import { FadeIn } from "@/components/fade-in";
 import { Mail, MapPin, ArrowUpRight } from "lucide-react";
 import { LinkedInIcon } from "@/components/icons";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
