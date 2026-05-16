@@ -68,7 +68,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-sm text-cream/70 hover:text-cream transition-colors duration-200 flex items-center gap-2"
               >
-                <Linkedin size={14} />
+                <LinkedInIcon size={14} />
                 LinkedIn
               </a>
               <a
