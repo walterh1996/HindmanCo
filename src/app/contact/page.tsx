@@ -73,7 +73,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 text-lg text-foreground hover:text-brand transition-colors duration-200"
                     >
-                      <Linkedin size={20} strokeWidth={1.5} />
+                      <LinkedInIcon size={20} />
                       linkedin.com/in/betsyhindman
                     </a>
                   </div>
