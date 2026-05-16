@@ -84,62 +84,43 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-24 md:py-36 lg:py-44 overflow-hidden">
-        <div className="container-narrow relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <FadeIn>
-                <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-6">
-                  LinkedIn Growth &amp; Thought Leadership
-                </p>
-              </FadeIn>
-              <FadeIn delay={0.1}>
-                <h1 className="font-serif italic text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-foreground mb-6">
-                  We help businesses leverage LinkedIn for growth.
-                </h1>
-              </FadeIn>
-              <FadeIn delay={0.2}>
-                <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl mb-10">
-                  A boutique strategic advisory for executives, brand leaders,
-                  and innovators who want LinkedIn to do real work — not just
-                  exist.
-                </p>
-              </FadeIn>
-              <FadeIn delay={0.3}>
-                <div className="flex flex-col sm:flex-row items-start gap-4">
-                  <a
-                    href="https://calendly.com/betsyhindman"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
-                  >
-                    Book a 20-Minute Discovery Call
-                  </a>
-                  <Link
-                    href="/services"
-                    className="inline-flex items-center gap-2 text-base text-text-secondary hover:text-foreground transition-colors duration-200 py-3"
-                  >
-                    See How We Work
-                    <ArrowRight size={16} />
-                  </Link>
-                </div>
-              </FadeIn>
-            </div>
-
-            <FadeIn delay={0.2} direction="left">
-              <div className="relative hidden lg:block">
-                <div className="relative aspect-[4/3] rounded-sm overflow-hidden">
-                  <Image
-                    src="/images/hero-street-1.webp"
-                    alt="Professional urban street scene — the world Hindman Company clients operate in"
-                    fill
-                    className="object-cover"
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-foreground/10" />
-                </div>
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-brand/20 rounded-sm" />
+      <section className="relative py-28 md:py-40 lg:py-52">
+        <div className="container-narrow">
+          <div className="max-w-3xl mx-auto text-center">
+            <FadeIn>
+              <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-8">
+                LinkedIn Growth &amp; Thought Leadership
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <h1 className="font-serif italic text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.08] text-foreground mb-8">
+                We help businesses leverage LinkedIn for growth.
+              </h1>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto mb-12">
+                A boutique strategic advisory for executives, brand leaders,
+                and innovators who want LinkedIn to do real work — not just
+                exist.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a
+                  href="https://calendly.com/betsyhindman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
+                >
+                  Book a 20-Minute Discovery Call
+                </a>
+                <Link
+                  href="/services"
+                  className="inline-flex items-center gap-2 text-base text-text-secondary hover:text-foreground transition-colors duration-200 py-3"
+                >
+                  See How We Work
+                  <ArrowRight size={16} />
+                </Link>
               </div>
             </FadeIn>
           </div>
