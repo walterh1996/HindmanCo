@@ -126,7 +126,7 @@ export default function HomePage() {
 
             {/* Logo marquee — full client list, scrolling */}
             <FadeIn delay={0.35}>
-              <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-text-secondary/50 mb-6">
+              <p className="text-[0.7425rem] font-medium tracking-[0.2em] uppercase text-text-secondary/50 mb-6">
                 Trusted by teams at
               </p>
             </FadeIn>
