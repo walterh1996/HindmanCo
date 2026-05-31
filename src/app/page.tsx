@@ -146,6 +146,11 @@ export default function HomePage() {
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
+            <p className="font-serif italic text-2xl md:text-3xl leading-[1.15] text-cream/80 mb-4 max-w-3xl">
+              Reporting live from Cannes Lions — as a guest of LinkedIn.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.15}>
             <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-cream mb-16 max-w-2xl">
               Measurable outcomes, not just impressions.
             </h2>
@@ -319,7 +324,7 @@ export default function HomePage() {
                   Thought Leadership in Action
                 </p>
                 <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-6">
-                  Reporting live from Cannes Lions — as a guest of LinkedIn.
+                  On-the-ground perspective for B2B brands.
                 </h2>
                 <p className="text-text-secondary leading-relaxed mb-4">
                   Betsy was invited by LinkedIn to cover the Cannes Lions
