@@ -222,7 +222,7 @@ export function TestimonialCarousel() {
             className="text-brand/10 mb-4 hidden lg:block"
             strokeWidth={1}
           />
-          <blockquote className="font-serif italic text-xl md:text-2xl lg:text-[1.75rem] leading-[1.45] text-foreground">
+          <blockquote className="font-serif italic text-xl md:text-2xl lg:text-[1.89rem] leading-[1.45] text-foreground">
             &ldquo;{t.quote}&rdquo;
           </blockquote>
           <div className="mt-6 h-px w-16 bg-brand/30" />
@@ -252,7 +252,7 @@ export function TestimonialCarousel() {
                 <Avatar testimonial={person} size={56} />
               </div>
               <span
-                className={`text-[10px] font-medium tracking-wide transition-all duration-300 max-w-[64px] text-center leading-tight ${
+                className={`text-[0.675rem] font-medium tracking-wide transition-all duration-300 max-w-[64px] text-center leading-tight ${
                   i === current
                     ? "text-brand"
                     : "text-text-secondary/0 group-hover:text-text-secondary/70"

@@ -126,7 +126,7 @@ export default function HomePage() {
 
             {/* Logo marquee — full client list, scrolling */}
             <FadeIn delay={0.35}>
-              <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-text-secondary/50 mb-6">
+              <p className="text-[0.7425rem] font-medium tracking-[0.2em] uppercase text-text-secondary/50 mb-6">
                 Trusted by teams at
               </p>
             </FadeIn>
@@ -134,6 +134,61 @@ export default function HomePage() {
           <FadeIn delay={0.4}>
             <LogoMarquee />
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Cannes Lions Video — Thought Leadership in Action */}
+      <section className="py-24 md:py-32 bg-accent">
+        <div className="container-narrow">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <FadeIn>
+              <div>
+                <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
+                  Thought Leadership in Action
+                </p>
+                <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-6">
+                  On-the-ground perspective for B2B brands.
+                </h2>
+                <p className="text-text-secondary leading-relaxed mb-4">
+                  Betsy was invited by LinkedIn to cover the Cannes Lions
+                  International Festival of Creativity — the world&rsquo;s
+                  biggest gathering of marketing leaders. Her on-the-ground
+                  reporting explored how B2B brands can harness creativity to
+                  tackle issues like cybersecurity, energy, and sustainability.
+                </p>
+                <p className="text-text-secondary leading-relaxed mb-6">
+                  Key insight from Bain &amp; LinkedIn research presented at
+                  Cannes: the average buying committee for major tech purchases
+                  is now 23 people — which is why challenger brands need to be
+                  known before the committee calls a meeting. That&rsquo;s
+                  exactly the kind of visibility Hindman Company builds.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="inline-flex items-center px-3 py-1 text-xs font-medium tracking-wide uppercase text-brand border border-brand/20 rounded-sm">
+                    Cannes Lions 2024
+                  </span>
+                  <span className="inline-flex items-center px-3 py-1 text-xs font-medium tracking-wide uppercase text-text-secondary border border-border rounded-sm">
+                    Invited by LinkedIn
+                  </span>
+                </div>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.15} direction="left">
+              <div className="relative rounded-sm overflow-hidden shadow-lg">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster="/images/cannes-poster.jpg"
+                  className="w-full h-auto"
+                >
+                  <source src="/images/cannes-lions.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
@@ -311,61 +366,6 @@ export default function HomePage() {
           <FadeIn delay={0.2}>
             <TestimonialCarousel />
           </FadeIn>
-        </div>
-      </section>
-
-      {/* Cannes Lions Video — Thought Leadership in Action */}
-      <section className="py-24 md:py-32 bg-accent">
-        <div className="container-narrow">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <FadeIn>
-              <div>
-                <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
-                  Thought Leadership in Action
-                </p>
-                <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-6">
-                  On-the-ground perspective for B2B brands.
-                </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
-                  Betsy was invited by LinkedIn to cover the Cannes Lions
-                  International Festival of Creativity — the world&rsquo;s
-                  biggest gathering of marketing leaders. Her on-the-ground
-                  reporting explored how B2B brands can harness creativity to
-                  tackle issues like cybersecurity, energy, and sustainability.
-                </p>
-                <p className="text-text-secondary leading-relaxed mb-6">
-                  Key insight from Bain &amp; LinkedIn research presented at
-                  Cannes: the average buying committee for major tech purchases
-                  is now 23 people — which is why challenger brands need to be
-                  known before the committee calls a meeting. That&rsquo;s
-                  exactly the kind of visibility Hindman Company builds.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex items-center px-3 py-1 text-xs font-medium tracking-wide uppercase text-brand border border-brand/20 rounded-sm">
-                    Cannes Lions 2024
-                  </span>
-                  <span className="inline-flex items-center px-3 py-1 text-xs font-medium tracking-wide uppercase text-text-secondary border border-border rounded-sm">
-                    Invited by LinkedIn
-                  </span>
-                </div>
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={0.15} direction="left">
-              <div className="relative rounded-sm overflow-hidden shadow-lg">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  poster="/images/cannes-poster.jpg"
-                  className="w-full h-auto"
-                >
-                  <source src="/images/cannes-lions.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </FadeIn>
-          </div>
         </div>
       </section>
 
