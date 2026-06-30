@@ -371,8 +371,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final CTA — differentiated, with secondary lead magnet */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
+      {/* Final CTA — contact form */}
+      <section
+        id="contact"
+        className="relative py-24 md:py-32 overflow-hidden scroll-mt-20"
+      >
         <div className="absolute inset-0">
           <Image
             src="/images/hero-street-2.webp"
@@ -395,44 +398,32 @@ export default function HomePage() {
                   Let&rsquo;s discuss what LinkedIn can do for your business.
                 </h2>
                 <p className="text-cream/60 leading-relaxed mb-8">
-                  Book a free 20-minute discovery call. No pitch deck, no
-                  pressure — just a conversation about your goals and whether
+                  Tell us a little about your goals and we&rsquo;ll be in touch.
+                  No pitch deck, no pressure — just a conversation about whether
                   we&rsquo;re the right fit.
                 </p>
-                <a
-                  href="https://calendly.com/betsyhindman"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
-                >
-                  Schedule a Call
-                </a>
+                <div className="flex items-start gap-3 text-cream/60">
+                  <Download
+                    size={20}
+                    className="text-brand mt-0.5 shrink-0"
+                    strokeWidth={1.5}
+                  />
+                  <p className="text-sm leading-relaxed">
+                    Prefer a quick diagnostic? Ask about a free{" "}
+                    <a
+                      href="mailto:betsy@hindmancompany.com?subject=LinkedIn%20Presence%20Audit&body=Hi%20Betsy%2C%0A%0AI%E2%80%99d%20love%20a%20free%20LinkedIn%20Presence%20Audit.%20Here%E2%80%99s%20my%20LinkedIn%20profile%20URL%3A%0A%0A"
+                      className="text-cream underline underline-offset-2 hover:text-cream/80 transition-colors"
+                    >
+                      LinkedIn Presence Audit
+                    </a>{" "}
+                    in your message.
+                  </p>
+                </div>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.15} direction="left">
-              <div className="border border-cream/15 rounded-sm p-8 md:p-10 bg-cream/5 backdrop-blur-sm">
-                <Download
-                  size={20}
-                  className="text-brand mb-4"
-                  strokeWidth={1.5}
-                />
-                <h3 className="text-lg font-medium text-cream mb-2">
-                  Not ready for a call?
-                </h3>
-                <p className="text-sm text-cream/50 leading-relaxed mb-6">
-                  Get a free LinkedIn Presence Audit — a quick diagnostic of
-                  your executive or company LinkedIn profile with 3-5 specific,
-                  actionable recommendations. No strings attached.
-                </p>
-                <a
-                  href="mailto:betsy@hindmancompany.com?subject=LinkedIn%20Presence%20Audit&body=Hi%20Betsy%2C%0A%0AI%E2%80%99d%20love%20a%20free%20LinkedIn%20Presence%20Audit.%20Here%E2%80%99s%20my%20LinkedIn%20profile%20URL%3A%0A%0A"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-cream hover:text-cream/80 transition-colors"
-                >
-                  Request a Free Audit
-                  <ArrowRight size={14} />
-                </a>
-              </div>
+              <ContactForm />
             </FadeIn>
           </div>
         </div>
