@@ -6,7 +6,9 @@ import {
   TrendingUp,
   BarChart3,
   Target,
+  Rocket,
 } from "lucide-react";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
