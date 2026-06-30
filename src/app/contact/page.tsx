@@ -131,11 +131,11 @@ export default function ContactPage() {
                     What does a typical engagement look like?
                   </h3>
                   <p className="text-text-secondary leading-relaxed">
-                    Every engagement is custom. Some clients need full-service
-                    executive thought leadership management. Others need a
-                    strategic audit, a training workshop, or help with LinkedIn
-                    advertising. We&rsquo;ll scope the right approach for your
-                    needs.
+                    Every client partnership is custom. Some clients need
+                    full-service executive thought leadership management. Others
+                    need a strategic audit, a training workshop, or help with
+                    LinkedIn advertising. We&rsquo;ll scope the right approach
+                    for your needs.
                   </p>
                 </div>
               </FadeIn>
