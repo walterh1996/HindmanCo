@@ -170,19 +170,17 @@ export default function InsightsPage() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="text-text-secondary text-lg leading-relaxed mb-10 max-w-lg mx-auto">
-              Book a free 20-minute discovery call to discuss how Hindman
-              Company can help your team or brand grow on LinkedIn.
+              Tell us about your goals and discover how Hindman Company can help
+              your team or brand grow on LinkedIn.
             </p>
           </FadeIn>
           <FadeIn delay={0.15}>
-            <a
-              href="https://calendly.com/betsyhindman"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
             >
-              Book a Discovery Call
-            </a>
+              Get in Touch
+            </Link>
           </FadeIn>
         </div>
       </section>
