@@ -324,12 +324,13 @@ export default function HomePage() {
                   Thought Leadership in Action
                 </p>
                 <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-6">
-                  Reporting live from Cannes Lions — as a guest of LinkedIn.
+                  On-the-ground perspective for B2B brands.
                 </h2>
                 <p className="text-text-secondary leading-relaxed mb-4">
-                  Betsy was invited by LinkedIn to cover the Cannes Lions
-                  International Festival of Creativity — the world&rsquo;s
-                  biggest gathering of marketing leaders. Her on-the-ground
+                  Among the thousands of experts, executives, and creators active
+                  on LinkedIn, Betsy was selected by the platform to help bring
+                  the insights of the Cannes Lions International Festival of
+                  Creativity to a broader executive audience. Her on-the-ground
                   reporting explored how B2B brands can harness creativity to
                   tackle issues like cybersecurity, energy, and sustainability.
                 </p>
