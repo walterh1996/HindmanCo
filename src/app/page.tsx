@@ -375,7 +375,6 @@ export default function HomePage() {
         </div>
       </section>
 
-<<<<<<< HEAD
       {/* Cannes Lions Video — Thought Leadership in Action */}
       <section className="py-24 md:py-32 bg-accent">
         <div className="container-narrow">
