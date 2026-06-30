@@ -23,14 +23,29 @@ const services = [
     title: "Executive Thought Leadership",
     subtitle: "For C-suite leaders and high-profile personal brands",
     description:
-      "We craft and manage LinkedIn presences for C-suite executives, founders, and public figures — turning their expertise into a strategic communications asset. Our process includes voice development, content strategy, ghostwriting, publishing, engagement management, and performance reporting.",
+      "We craft and manage LinkedIn presences for C-suite executives, founders, and public figures — transforming your expertise into a strategic communications asset. Beyond standard content approaches, we understand that video is the greatest driver of reach and engagement on LinkedIn, and we strategize and execute interviews that result in engaging video content for the platform. Our process includes voice development, content strategy, ghostwriting, publishing, engagement management, and performance reporting.",
     includes: [
       "Voice and narrative development",
       "Content calendar and strategy",
+      "Video interviews and polished video content",
       "Ghostwriting and editing",
       "Publishing and scheduling",
       "Comment and engagement management",
       "Monthly performance reporting",
+    ],
+  },
+  {
+    icon: Rocket,
+    title: "Employee Activation",
+    subtitle: "For organizations mobilizing their teams on LinkedIn",
+    description:
+      "We give you all the tools to motivate and mobilize company employees to take action on LinkedIn. As the platform has grown over the years, individual activity has become increasingly important and now outperforms company page content. We lean into this truth and aid in developing content that employees can share that aligns with corporate messaging.",
+    includes: [
+      "Audit review",
+      "Training session",
+      "Develop appropriate content",
+      "Guide internal teams in content creation",
+      "Plan for major announcements",
     ],
   },
   {
