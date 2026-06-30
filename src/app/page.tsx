@@ -262,8 +262,9 @@ export default function HomePage() {
                 <p className="text-text-secondary leading-relaxed mb-8">
                   Before founding Hindman Company, Betsy spent five years in
                   enterprise sales at the Walt Disney Company managing over
-                  $180M in revenue. Featured in Ad Age, CNBC, Digiday, and
-                  PRWeek. Vanderbilt University, magna cum laude.
+                  $180M in revenue. Featured in Ad Age, CNBC, Digiday, PRWeek,
+                  Forbes, Entrepreneur, and Adobe. Vanderbilt University, magna
+                  cum laude.
                 </p>
                 <Link
                   href="/about"
