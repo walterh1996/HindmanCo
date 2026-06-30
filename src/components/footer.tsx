@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, ArrowUpRight } from "lucide-react";
+import { Mail } from "lucide-react";
 import { LinkedInIcon } from "@/components/icons";
 
 const footerLinks = [
