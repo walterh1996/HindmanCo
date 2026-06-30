@@ -19,13 +19,13 @@ const services = [
     icon: PenTool,
     title: "Executive Thought Leadership",
     description:
-      "We craft and manage LinkedIn presences for C-suite executives, founders, and public figures — turning their expertise into a strategic communications asset.",
+      "We craft and manage LinkedIn presences for C-suite executives, founders, and public figures — transforming your expertise into a strategic communications asset.",
   },
   {
     icon: Users,
     title: "Corporate LinkedIn Training",
     description:
-      "Custom workshops and ongoing coaching for enterprise teams — from employee advocacy programs to executive communications training.",
+      "Custom workshops and ongoing coaching to equip enterprise teams — from employee advocacy programs to executive communications training that drives business results.",
   },
   {
     icon: Megaphone,
