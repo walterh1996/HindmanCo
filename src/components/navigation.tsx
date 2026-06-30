@@ -49,14 +49,12 @@ export function Navigation() {
         </div>
 
         <div className="flex items-center gap-4">
-          <a
-            href="https://calendly.com/betsyhindman"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
             className="hidden md:inline-flex items-center justify-center h-10 px-5 text-sm font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
           >
-            Book a Call
-          </a>
+            Get in Touch
+          </Link>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden p-2 text-foreground"
