@@ -156,7 +156,7 @@ export default function ClientsPage() {
         <div className="container-narrow">
           <FadeIn>
             <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-16 max-w-2xl">
-              We work with three types of clients.
+              We work best with three types of clients.
             </h2>
           </FadeIn>
 
