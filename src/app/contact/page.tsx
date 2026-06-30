@@ -100,46 +100,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Calendly Embed Section */}
-      <section className="py-24 md:py-32 bg-accent">
-        <div className="container-narrow">
-          <div className="max-w-3xl mx-auto text-center">
-            <FadeIn>
-              <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
-                Schedule
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.1}>
-              <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-6">
-                Pick a time that works for you.
-              </h2>
-            </FadeIn>
-            <FadeIn delay={0.15}>
-              <p className="text-text-secondary leading-relaxed mb-10">
-                Select a 20-minute slot below. If you don&rsquo;t see a time
-                that works, email us directly and we&rsquo;ll find one.
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.2}>
-              <div className="bg-white rounded-sm border border-border p-8 md:p-12 text-center">
-                <a
-                  href="https://calendly.com/betsyhindman"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-lg font-medium text-brand hover:text-brand-dark transition-colors"
-                >
-                  Open Scheduling Page
-                  <ArrowUpRight size={18} />
-                </a>
-                <p className="text-sm text-text-secondary mt-4">
-                  Opens Calendly in a new tab
-                </p>
-              </div>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="py-24 md:py-32">
         <div className="container-narrow">
