@@ -43,7 +43,7 @@ const services = [
     icon: BarChart3,
     title: "Analytics & Reporting",
     description:
-      "Clear dashboards and executive-ready reporting that ties LinkedIn activity to business outcomes — reach, engagement, pipeline, revenue.",
+      "Clear dashboards and executive-ready reporting that ties LinkedIn activity to meaningful business outcomes like reach, engagement, pipeline growth, and revenue.",
   },
   {
     icon: Target,
