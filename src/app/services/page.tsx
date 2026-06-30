@@ -172,9 +172,9 @@ export default function ServicesPage() {
             </FadeIn>
             <FadeIn delay={0.15}>
               <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl">
-                We offer a focused suite of LinkedIn services — each built on
-                strategic foundations, not cookie-cutter playbooks. Every
-                engagement is custom.
+                We offer a focused suite of thought leadership LinkedIn services
+                — each built on strategic foundations, not cookie-cutter
+                playbooks. Every engagement is custom.
               </p>
             </FadeIn>
           </div>
