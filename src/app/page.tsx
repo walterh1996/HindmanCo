@@ -192,8 +192,8 @@ export default function HomePage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <h2 className="font-serif italic text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-foreground mb-4">
-                LinkedIn strategy for the world&rsquo;s most visible brands and
-                leaders.
+                Thought leadership LinkedIn strategies for the world&rsquo;s most
+                visible brands and leaders.
               </h2>
             </FadeIn>
             <FadeIn delay={0.15}>
