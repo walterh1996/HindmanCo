@@ -142,7 +142,7 @@ const process = [
     step: "03",
     title: "Execution",
     description:
-      "Our team handles the work — writing, designing, publishing, engaging, and optimizing. You review and approve. We iterate and improve. The system runs.",
+      "Our team handles the work — writing, designing, publishing, engaging, and optimizing. You review and approve. We iterate and improve. In all, it's seamless and effective for busy executive teams.",
   },
   {
     step: "04",
