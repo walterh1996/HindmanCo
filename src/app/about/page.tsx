@@ -23,6 +23,7 @@ const pressLogos = [
   "PRWeek",
   "Forbes",
   "Entrepreneur",
+  "Adobe",
 ];
 
 const career = [
