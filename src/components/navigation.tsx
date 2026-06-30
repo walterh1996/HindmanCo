@@ -85,14 +85,13 @@ export function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href="https://calendly.com/betsyhindman"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
+                onClick={() => setMobileOpen(false)}
                 className="mt-2 inline-flex items-center justify-center h-11 px-6 text-sm font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors"
               >
-                Book a Call
-              </a>
+                Get in Touch
+              </Link>
             </div>
           </motion.div>
         )}
