@@ -13,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LogoMarquee } from "@/components/logo-marquee";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
+import { ContactForm } from "@/components/contact-form";
 
 const services = [
   {
