@@ -31,21 +31,14 @@ export default function ContactPage() {
               </FadeIn>
               <FadeIn delay={0.15}>
                 <p className="text-lg text-text-secondary leading-relaxed mb-10">
-                  The best way to explore working together is to book a free
-                  20-minute discovery call. No pitch deck, no pressure — just a
+                  Tell me a little about what you&rsquo;re looking for and
+                  I&rsquo;ll be in touch. No pitch deck, no pressure — just a
                   conversation about your goals and whether we&rsquo;re the
                   right fit.
                 </p>
               </FadeIn>
               <FadeIn delay={0.2}>
-                <a
-                  href="https://calendly.com/betsyhindman"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
-                >
-                  Book a 20-Minute Discovery Call
-                </a>
+                <ContactForm />
               </FadeIn>
             </div>
 
