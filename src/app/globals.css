@@ -13,6 +13,20 @@
   --font-sans: var(--font-inter);
   --font-serif: var(--font-fraunces);
 
+  --text-xs: calc(0.75rem * 1.08);
+  --text-sm: calc(0.875rem * 1.08);
+  --text-base: calc(1rem * 1.08);
+  --text-lg: calc(1.125rem * 1.08);
+  --text-xl: calc(1.25rem * 1.08);
+  --text-2xl: calc(1.5rem * 1.08);
+  --text-3xl: calc(1.875rem * 1.08);
+  --text-4xl: calc(2.25rem * 1.08);
+  --text-5xl: calc(3rem * 1.08);
+  --text-6xl: calc(3.75rem * 1.08);
+  --text-7xl: calc(4.5rem * 1.08);
+  --text-8xl: calc(6rem * 1.08);
+  --text-9xl: calc(8rem * 1.08);
+
   --animate-marquee: marquee 40s linear infinite;
 }
 
@@ -38,6 +52,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: var(--text-base);
 }
 
 ::selection {
@@ -46,11 +61,12 @@ body {
 }
 
 @utility container-narrow {
-  max-width: 72rem;
+  width: 100%;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: clamp(1.5rem, 4vw, 5rem);
+  padding-right: clamp(1.5rem, 4vw, 5rem);
 }
 
 @utility scrollbar-hide {
