@@ -144,9 +144,15 @@ export default function HomePage() {
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-cream mb-16 max-w-2xl">
+            <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-cream mb-6 max-w-2xl">
               Measurable outcomes, not just impressions.
             </h2>
+          </FadeIn>
+          <FadeIn delay={0.15}>
+            <p className="text-cream/60 leading-relaxed mb-16 max-w-2xl">
+              Trusted by dozens of national companies to reimagine a professional
+              LinkedIn presence for corporate entities and C-suite teams.
+            </p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-cream/10">
