@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Hindman Company. Book a 20-minute discovery call with Betsy Hindman to discuss LinkedIn growth strategy for your brand or team.",
+    "Get in touch with Hindman Company. Send Betsy Hindman a message to discuss LinkedIn growth strategy for your brand or team.",
 };
 
 export default function ContactPage() {
