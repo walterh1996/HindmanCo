@@ -119,7 +119,7 @@ export default function AboutPage() {
                     into LinkedIn&rsquo;s thought leader ads for CNBC, and her
                     predictions for the future of LinkedIn advertising in
                     Digiday. She has been featured in Ad Age, CNBC, Digiday,
-                    PRWeek, Forbes, and Entrepreneur.
+                    PRWeek, Forbes, Entrepreneur, and Adobe.
                   </p>
                   <p>
                     Betsy is a member of the Sunday Dinner Community — a
