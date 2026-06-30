@@ -239,7 +239,7 @@ export default function ServicesPage() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-cream mb-16 max-w-2xl">
-              A clear, repeatable process — tailored to every client.
+              A clear, repeatable process — tailored to your business.
             </h2>
           </FadeIn>
 
