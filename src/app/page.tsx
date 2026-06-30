@@ -436,10 +436,6 @@ export default function HomePage() {
         id="contact"
         className="relative py-24 md:py-32 overflow-hidden scroll-mt-20"
       >
-=======
-      {/* Final CTA — differentiated, with secondary lead magnet */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
->>>>>>> 472497780e23d22820d27016318d569210bd8277
         <div className="absolute inset-0">
           <Image
             src="/images/hero-street-2.webp"
