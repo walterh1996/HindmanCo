@@ -76,15 +76,6 @@ export function Footer() {
                 <LinkedInIcon size={14} />
                 LinkedIn
               </a>
-              <a
-                href="https://calendly.com/betsyhindman"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-cream/70 hover:text-cream transition-colors duration-200 flex items-center gap-2"
-              >
-                <ArrowUpRight size={14} />
-                Book a Discovery Call
-              </a>
             </div>
           </div>
         </div>
