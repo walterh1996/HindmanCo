@@ -47,7 +47,7 @@ const clientTypes = [
   {
     title: "Enterprise Brands",
     description:
-      "Fortune 500 communications, marketing, and brand teams who need strategic LinkedIn programs — from executive thought leadership to employee advocacy to paid campaigns.",
+      "Fortune 50 communications, marketing, and brand teams who need strategic LinkedIn programs — from executive thought leadership to employee advocacy to paid campaigns.",
     examples:
       "Technology, financial services, telecommunications, professional services, healthcare, consumer brands.",
   },
