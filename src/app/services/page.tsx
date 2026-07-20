@@ -23,7 +23,7 @@ const services = [
     title: "Executive Thought Leadership",
     subtitle: "For C-suite leaders and high-profile personal brands",
     description:
-      "We craft and manage LinkedIn presences for C-suite executives, founders, and public figures — transforming your expertise into a strategic communications asset. Beyond standard content approaches, we understand that video is the greatest driver of reach and engagement on LinkedIn, and we strategize and execute interviews that result in engaging video content for the platform. Our process includes voice development, content strategy, ghostwriting, publishing, engagement management, and performance reporting.",
+      "We craft and manage LinkedIn presences for C-suite executives, founders, and public figures transforming your expertise into a strategic communications asset. Beyond standard content approaches, we understand that video is the greatest driver of reach and engagement on LinkedIn and strategize and execute interviews that result in engaging video content for the platform. Our process includes voice development, content strategy, ghostwriting, publishing, engagement management, and performance reporting.",
     includes: [
       "Voice and narrative development",
       "Content calendar and strategy",
@@ -50,7 +50,7 @@ const services = [
   },
   {
     icon: Users,
-    title: "Corporate LinkedIn Training",
+    title: "Corporate Training",
     subtitle: "For enterprise communications and marketing teams",
     description:
       "Custom workshops and ongoing coaching for enterprise teams. From employee advocacy programs to executive communications training, we help organizations activate their people as thought leaders on LinkedIn.",
@@ -136,7 +136,7 @@ const process = [
     step: "02",
     title: "Strategy",
     description:
-      "We develop a comprehensive LinkedIn strategy — positioning, content pillars, voice guidelines, engagement approach, and success metrics — all documented and presented for your review.",
+      "We develop a comprehensive strategy — positioning, content pillars, voice guidelines, engagement approach, and success metrics — all documented and presented for your review.",
   },
   {
     step: "03",
@@ -166,13 +166,13 @@ export default function ServicesPage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <h1 className="font-serif italic text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-foreground mb-6">
-                Strategic LinkedIn services for enterprise brands and
+                Strategic services for enterprise brands and
                 executives.
               </h1>
             </FadeIn>
             <FadeIn delay={0.15}>
               <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl">
-                We offer a focused suite of thought leadership LinkedIn services
+                We offer a focused suite of thought leadership services
                 — each built on strategic foundations, not cookie-cutter
                 playbooks. Every engagement is custom.
               </p>
@@ -239,7 +239,7 @@ export default function ServicesPage() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-cream mb-16 max-w-2xl">
-              A clear, repeatable process — tailored to your business.
+              A clear process — tailored to your business.
             </h2>
           </FadeIn>
 
