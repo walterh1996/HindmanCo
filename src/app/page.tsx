@@ -20,13 +20,13 @@ const services = [
     icon: PenTool,
     title: "Executive Thought Leadership",
     description:
-      "We craft and manage LinkedIn presences for C-suite executives, founders, and public figures — transforming your expertise into a strategic communications asset.",
+      "We craft and manage LinkedIn presences for C-suite executives, founders, and public figures, transforming your expertise into a strategic communications asset.",
   },
   {
     icon: Users,
     title: "Corporate LinkedIn Training",
     description:
-      "Custom workshops and ongoing coaching to equip enterprise teams — from employee advocacy programs to executive communications training that drives business results.",
+      "Custom workshops and ongoing coaching for enterprise teams to equip employees with communications training that drives business results.",
   },
   {
     icon: Megaphone,
@@ -38,13 +38,13 @@ const services = [
     icon: TrendingUp,
     title: "Organic Growth Strategy",
     description:
-      "Content strategy, posting cadences, engagement playbooks, and community building — designed to grow influence, not just followers.",
+      "Content strategy, posting cadences, engagement playbooks, and community building designed to grow influence, not just followers.",
   },
   {
     icon: BarChart3,
     title: "Analytics & Reporting",
     description:
-      "Clear dashboards and executive-ready reporting that ties LinkedIn activity to meaningful business outcomes like reach, engagement, pipeline growth, and revenue.",
+      "Clear dashboards and executive-ready reporting that ties LinkedIn activity to meaningful business outcomes like engagement, pipeline growth and revenue.",
   },
   {
     icon: Target,
@@ -253,7 +253,7 @@ export default function HomePage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <h2 className="font-serif italic text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-foreground mb-4">
-                Thought leadership LinkedIn strategies for the world&rsquo;s most
+                Thought leadership strategies for the world&rsquo;s most
                 visible brands and leaders.
               </h2>
             </FadeIn>
@@ -324,7 +324,7 @@ export default function HomePage() {
                   Before founding Hindman Company, Betsy spent five years in
                   enterprise sales at the Walt Disney Company managing over
                   $180M in revenue. Featured in Ad Age, CNBC, Digiday, PRWeek,
-                  Forbes, Entrepreneur, and Adobe. Vanderbilt University, magna
+                  Forbes, Entrepreneur and Adobe. Vanderbilt University, magna
                   cum laude.
                 </p>
                 <Link

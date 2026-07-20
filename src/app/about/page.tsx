@@ -99,16 +99,14 @@ export default function AboutPage() {
                   <p>
                     She has worked with leaders across all sectors, including
                     manufacturing, advertising, gaming, entertainment,
-                    women&rsquo;s sports, and publishing. Her clients include
+                    women&rsquo;s sports, and publishing. Her clients span
                     Fortune 50 executives, Academy Award-winning entertainment
-                    producers, legendary athletes and Olympians, tier 1
-                    advertising agencies and PR firms, cybersecurity, fintech,
-                    and SaaS teams. She&rsquo;s also worked with groups of
-                    formerly incarcerated men and veterans making the transition
-                    to the business world.
+                    producers, legendary athletes and Olympians, advertising
+                    agencies and PR firms, cybersecurity, fintech, and SaaS
+                    teams.
                   </p>
                   <p>
-                    Over the past 5 years, LinkedIn has gone from a nice-to-have
+                    In the past few years, LinkedIn has gone from a nice-to-have
                     to a critical owned communication channel for brands and
                     brand leaders — even supplanting traditional thought
                     leadership PR. It has also become an engine for
@@ -119,8 +117,8 @@ export default function AboutPage() {
                     panelist, and source for news articles, such as her insights
                     into LinkedIn&rsquo;s thought leader ads for CNBC, and her
                     predictions for the future of LinkedIn advertising in
-                    Digiday. She has been featured in Ad Age, CNBC, Digiday,
-                    PRWeek, Forbes, Entrepreneur, and Adobe.
+                    Digiday. She has been featured in Ad Age, PRWeek, Forbes,
+                    Adobe and Entrepreneur.
                   </p>
                   <p>
                     Betsy is a member of the Sunday Dinner Community — a
