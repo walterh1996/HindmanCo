@@ -1,6 +1,5 @@
 import { FadeIn } from "@/components/fade-in";
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -215,30 +214,6 @@ export default function ClientsPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 md:py-32 bg-accent">
-        <div className="container-narrow text-center">
-          <FadeIn>
-            <h2 className="font-serif italic text-3xl md:text-4xl leading-[1.15] text-foreground mb-6 max-w-2xl mx-auto">
-              Ready to join them?
-            </h2>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <p className="text-text-secondary text-lg leading-relaxed mb-10 max-w-lg mx-auto">
-              Tell us about your goals and discover how Hindman Company can help
-              you leverage LinkedIn for growth.
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.15}>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
-            >
-              Get in Touch
-            </Link>
-          </FadeIn>
-        </div>
-      </section>
     </>
   );
 }

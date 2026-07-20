@@ -125,7 +125,7 @@ export default function ContactPage() {
                   </p>
                 </div>
               </FadeIn>
-              <FadeIn delay={0.15}>
+              <FadeIn delay={0.1}>
                 <div className="py-8">
                   <h3 className="text-lg font-medium text-foreground mb-3">
                     How much does it cost?
@@ -138,7 +138,7 @@ export default function ContactPage() {
                   </p>
                 </div>
               </FadeIn>
-              <FadeIn delay={0.2}>
+              <FadeIn delay={0.15}>
                 <div className="py-8">
                   <h3 className="text-lg font-medium text-foreground mb-3">
                     Do you work with individuals or just companies?

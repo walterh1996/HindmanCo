@@ -48,21 +48,13 @@ export function Navigation() {
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
-          <Link
-            href="/contact"
-            className="hidden md:inline-flex items-center justify-center h-10 px-5 text-sm font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
-          >
-            Get in Touch
-          </Link>
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 text-foreground"
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
-          >
-            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="md:hidden p-2 text-foreground"
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+        >
+          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </nav>
 
       <AnimatePresence>
@@ -85,13 +77,6 @@ export function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                onClick={() => setMobileOpen(false)}
-                className="mt-2 inline-flex items-center justify-center h-11 px-6 text-sm font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors"
-              >
-                Get in Touch
-              </Link>
             </div>
           </motion.div>
         )}
