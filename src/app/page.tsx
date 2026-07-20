@@ -341,8 +341,8 @@ export default function HomePage() {
               <div className="relative">
                 <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                   <Image
-                    src="/images/betsy-headshot.webp"
-                    alt="Betsy Hindman — Founder of Hindman Company"
+                    src="/images/betsy-cannes-studio.webp"
+                    alt="Betsy Hindman filming at the LinkedIn Studio during Cannes Lions"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 40vw"
