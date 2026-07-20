@@ -188,6 +188,62 @@ export default function HomePage() {
               </div>
             </FadeIn>
           </div>
+
+          {/* Featured leadership perspective — Kate Barton, Dentons */}
+          <div className="mt-20 md:mt-28 pt-16 md:pt-20 border-t border-border">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <FadeIn direction="right">
+                <div className="mx-auto w-full max-w-sm order-2 lg:order-1">
+                  <div className="relative rounded-sm overflow-hidden shadow-lg">
+                    <video
+                      controls
+                      muted
+                      playsInline
+                      preload="metadata"
+                      poster="/images/kate-barton-dentons-poster.jpg"
+                      className="w-full h-auto"
+                    >
+                      <source
+                        src="/images/kate-barton-dentons.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </FadeIn>
+
+              <FadeIn delay={0.15}>
+                <div className="order-1 lg:order-2">
+                  <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
+                    Leadership Perspective
+                  </p>
+                  <h3 className="font-serif italic text-2xl md:text-3xl lg:text-4xl leading-[1.15] text-foreground mb-6">
+                    &ldquo;What clients really want is simple.&rdquo;
+                  </h3>
+                  <p className="text-text-secondary leading-relaxed mb-4">
+                    Kate Barton, Global CEO of Dentons, on why clients value one
+                    trusted partner who understands their business, sees the full
+                    picture, and can bring the right people together wherever they
+                    are in the world.
+                  </p>
+                  <p className="text-text-secondary leading-relaxed mb-6">
+                    It&rsquo;s a clear example of the executive thought leadership
+                    that resonates on LinkedIn — a genuine point of view, shared
+                    through video, that builds trust and visibility with the
+                    people who matter most.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-flex items-center px-3 py-1 text-xs font-medium tracking-wide uppercase text-brand border border-brand/20 rounded-sm">
+                      Kate Barton
+                    </span>
+                    <span className="inline-flex items-center px-3 py-1 text-xs font-medium tracking-wide uppercase text-text-secondary border border-border rounded-sm">
+                      Global CEO, Dentons
+                    </span>
+                  </div>
+                </div>
+              </FadeIn>
+            </div>
+          </div>
         </div>
       </section>
 
