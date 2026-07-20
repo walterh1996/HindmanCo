@@ -108,12 +108,6 @@ export default function HomePage() {
             <FadeIn delay={0.3}>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 md:mb-20">
                 <Link
-                  href="#contact"
-                  className="inline-flex items-center justify-center h-13 px-8 text-base font-medium bg-brand text-white rounded-sm hover:bg-brand-dark transition-colors duration-200"
-                >
-                  Get in Touch
-                </Link>
-                <Link
                   href="/services"
                   className="inline-flex items-center gap-2 text-base text-text-secondary hover:text-foreground transition-colors duration-200 py-3"
                 >

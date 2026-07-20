@@ -114,20 +114,6 @@ export default function ContactPage() {
               <FadeIn delay={0.05}>
                 <div className="py-8">
                   <h3 className="text-lg font-medium text-foreground mb-3">
-                    What happens on the discovery call?
-                  </h3>
-                  <p className="text-text-secondary leading-relaxed">
-                    It&rsquo;s a 20-minute conversation to understand your
-                    goals, your current LinkedIn presence, and what success
-                    looks like. We&rsquo;ll share relevant experience and
-                    discuss whether there&rsquo;s a fit. No pitch deck, no
-                    pressure.
-                  </p>
-                </div>
-              </FadeIn>
-              <FadeIn delay={0.1}>
-                <div className="py-8">
-                  <h3 className="text-lg font-medium text-foreground mb-3">
                     What does a typical engagement look like?
                   </h3>
                   <p className="text-text-secondary leading-relaxed">
@@ -139,7 +125,7 @@ export default function ContactPage() {
                   </p>
                 </div>
               </FadeIn>
-              <FadeIn delay={0.15}>
+              <FadeIn delay={0.1}>
                 <div className="py-8">
                   <h3 className="text-lg font-medium text-foreground mb-3">
                     How much does it cost?
@@ -152,7 +138,7 @@ export default function ContactPage() {
                   </p>
                 </div>
               </FadeIn>
-              <FadeIn delay={0.2}>
+              <FadeIn delay={0.15}>
                 <div className="py-8">
                   <h3 className="text-lg font-medium text-foreground mb-3">
                     Do you work with individuals or just companies?
