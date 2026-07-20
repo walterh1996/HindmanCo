@@ -100,9 +100,8 @@ export default function HomePage() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto mb-8">
-                A boutique strategic advisory for executives, brand leaders,
-                and innovators who want LinkedIn to do real work — not just
-                exist.
+                Strategic counsel for executives, brand leaders, and
+                innovators who want a stronger voice in their industry.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>

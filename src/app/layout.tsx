@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Hindman Company",
   },
   description:
-    "A boutique strategic advisory for executives, brand leaders, and innovators who want LinkedIn to do real work. LinkedIn growth strategy, executive thought leadership, and B2B campaigns.",
+    "Strategic counsel for executives, brand leaders, and innovators who want a stronger voice in their industry. LinkedIn growth strategy, executive thought leadership, and B2B campaigns.",
   keywords: [
     "LinkedIn growth",
     "thought leadership",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Hindman Company",
     title: "Hindman Company — LinkedIn Growth & Thought Leadership",
     description:
-      "A boutique strategic advisory for executives, brand leaders, and innovators who want LinkedIn to do real work.",
+      "Strategic counsel for executives, brand leaders, and innovators who want a stronger voice in their industry.",
     images: [
       {
         url: "/og-image.jpg",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hindman Company — LinkedIn Growth & Thought Leadership",
     description:
-      "A boutique strategic advisory for executives, brand leaders, and innovators who want LinkedIn to do real work.",
+      "Strategic counsel for executives, brand leaders, and innovators who want a stronger voice in their industry.",
     images: ["/og-image.jpg"],
   },
   robots: {
