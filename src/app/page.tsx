@@ -182,28 +182,6 @@ export default function HomePage() {
               </div>
             </FadeIn>
           </div>
-
-          <FadeIn delay={0.15}>
-            <div className="mt-20 md:mt-28 pt-16 md:pt-20 border-t border-border">
-              <div className="mx-auto w-full max-w-sm">
-                <div className="relative rounded-sm overflow-hidden shadow-lg">
-                  <video
-                    controls
-                    muted
-                    playsInline
-                    preload="metadata"
-                    poster="/images/kate-barton-dentons-poster.jpg"
-                    className="w-full h-auto"
-                  >
-                    <source
-                      src="/images/kate-barton-dentons.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div>
-              </div>
-            </div>
-          </FadeIn>
         </div>
       </section>
 
@@ -261,23 +239,45 @@ export default function HomePage() {
       {/* Services Overview */}
       <section className="py-24 md:py-32 border-t border-border">
         <div className="container-narrow">
-          <div className="max-w-2xl mb-16">
-            <FadeIn>
-              <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
-                What We Do
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.1}>
-              <h2 className="font-serif italic text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-foreground mb-4">
-                Thought leadership strategies for the world&rsquo;s most
-                visible brands and leaders.
-              </h2>
-            </FadeIn>
-            <FadeIn delay={0.15}>
-              <p className="text-text-secondary text-lg leading-relaxed">
-                From Fortune 50 executive communications to high-profile
-                personal brands, we bring strategic rigor to every engagement.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16 md:mb-20">
+            <div>
+              <FadeIn>
+                <p className="text-xs font-medium tracking-[0.2em] uppercase text-text-secondary mb-4">
+                  What We Do
+                </p>
+              </FadeIn>
+              <FadeIn delay={0.1}>
+                <h2 className="font-serif italic text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-foreground mb-4">
+                  Thought leadership strategies for the world&rsquo;s most
+                  visible brands and leaders.
+                </h2>
+              </FadeIn>
+              <FadeIn delay={0.15}>
+                <p className="text-text-secondary text-lg leading-relaxed">
+                  From Fortune 50 executive communications to high-profile
+                  personal brands, we bring strategic rigor to every engagement.
+                </p>
+              </FadeIn>
+            </div>
+
+            <FadeIn delay={0.15} direction="left">
+              <div className="mx-auto w-full max-w-sm lg:max-w-none">
+                <div className="relative rounded-sm overflow-hidden shadow-lg">
+                  <video
+                    controls
+                    muted
+                    playsInline
+                    preload="metadata"
+                    poster="/images/kate-barton-dentons-poster.jpg"
+                    className="w-full h-auto"
+                  >
+                    <source
+                      src="/images/kate-barton-dentons.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
             </FadeIn>
           </div>
 
