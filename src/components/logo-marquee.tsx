@@ -9,6 +9,7 @@ const allClients = [
   { name: "Wieden+Kennedy", logo: "/images/clients/wieden-kennedy.webp" },
   { name: "Nasdaq", logo: "/images/clients/nasdaq.webp" },
   { name: "Dentons", logo: "/images/clients/dentons.webp" },
+  { name: "CRH", logo: "/images/clients/crh.webp" },
   { name: "YouTube", logo: "/images/clients/youtube.webp" },
   { name: "Edelman", logo: "/images/clients/edelman.webp" },
   { name: "MullenLowe", logo: "/images/clients/mullenlowe.webp" },
