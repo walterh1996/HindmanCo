@@ -39,7 +39,6 @@ const additionalClients = [
   "Dentons",
   "Wieden+Kennedy",
   "Sugar23",
-  "The Walt Disney Company",
 ];
 
 const clientTypes = [

@@ -4,7 +4,6 @@ import Image from "next/image";
 
 const allClients = [
   { name: "Microsoft", logo: "/images/clients/microsoft.webp" },
-  { name: "Disney", logo: "/images/clients/disney.webp" },
   { name: "AT&T", logo: "/images/clients/att.webp" },
   { name: "Wieden+Kennedy", logo: "/images/clients/wieden-kennedy.webp" },
   { name: "Nasdaq", logo: "/images/clients/nasdaq.webp" },
